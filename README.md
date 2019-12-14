@@ -287,7 +287,7 @@ ProMicroの部品が実装されている面にコンスルーを差し込みま
 書き込みには [qmk_toolbox](https://qmk.fm/toolbox/) を使用します。
 [こちら](https://github.com/qmk/qmk_toolbox/releases) から最新版をダウンロードし任意の場所に保存します。
 
-次に、[こちら](https://github.com/kakunpc/Suihankey/releases/)からファームウェアをダウンロードし任意の場所に保存します。 (thedogkeyboard_default.hex)
+次に、[こちら](https://github.com/kakunpc/thedogkeyboard/releases)からファームウェアをダウンロードし任意の場所に保存します。 (thedogkeyboard_default.hex)
 
 その後qmk_toolboxを起動します。
 
