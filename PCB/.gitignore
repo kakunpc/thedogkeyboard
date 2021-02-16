@@ -1,0 +1,10 @@
+fp-info-cache
+*.bin
+*.dsn
+*.rules
+*.ses
+*.csv
+*.kicad_pcb-bak
+*.sch-bak
+*.step
+*.xml

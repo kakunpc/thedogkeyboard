@@ -1,0 +1,3873 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label -4500 -3850 0    50   ~ 0
+RST
+Text Label -4500 -3650 0    50   ~ 0
+col0
+Text Label -4500 -3550 0    50   ~ 0
+col1
+Text Label -4500 -3450 0    50   ~ 0
+col2
+Text Label -4500 -3350 0    50   ~ 0
+col3
+Text Label -4500 -3250 0    50   ~ 0
+col4
+Text Label -4500 -3150 0    50   ~ 0
+col5
+Text Label -4500 -2950 0    50   ~ 0
+col7
+Text Label -4500 -3050 0    50   ~ 0
+col6
+Text Label -5900 -4050 2    50   ~ 0
+LED
+Text Label -5900 -3650 2    50   ~ 0
+row0
+Text Label -5900 -3550 2    50   ~ 0
+row1
+Text Label -5900 -3450 2    50   ~ 0
+row2
+Text Label -5900 -3350 2    50   ~ 0
+row3
+Text Label -5900 -3250 2    50   ~ 0
+row4
+Text Label -5900 -3150 2    50   ~ 0
+row5
+$Comp
+L power:GND #PWR015
+U 1 1 5D1BA05D
+P -4250 -3950
+F 0 "#PWR015" H -4250 -4200 50  0001 C CNN
+F 1 "GND" H -4245 -4123 50  0000 C CNN
+F 2 "" H -4250 -3950 50  0001 C CNN
+F 3 "" H -4250 -3950 50  0001 C CNN
+	1    -4250 -3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5D1BAAAA
+P -6200 -3850
+F 0 "#PWR01" H -6200 -4100 50  0001 C CNN
+F 1 "GND" H -6195 -4023 50  0000 C CNN
+F 2 "" H -6200 -3850 50  0001 C CNN
+F 3 "" H -6200 -3850 50  0001 C CNN
+	1    -6200 -3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-5900 -3850 -6000 -3850
+Wire Wire Line
+	-5900 -3750 -6000 -3750
+Wire Wire Line
+	-6000 -3750 -6000 -3850
+Connection ~ -6000 -3850
+Wire Wire Line
+	-6000 -3850 -6200 -3850
+Wire Wire Line
+	-4500 -3950 -4250 -3950
+$Comp
+L power:VCC #PWR016
+U 1 1 5D1BB01A
+P -4100 -3750
+F 0 "#PWR016" H -4100 -3900 50  0001 C CNN
+F 1 "VCC" H -4083 -3577 50  0000 C CNN
+F 2 "" H -4100 -3750 50  0001 C CNN
+F 3 "" H -4100 -3750 50  0001 C CNN
+	1    -4100 -3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-4500 -3750 -4100 -3750
+Text Label -250 -5750 1    50   ~ 0
+col0
+Text Label 1750 -5750 1    50   ~ 0
+col2
+Text Label 2750 -5750 1    50   ~ 0
+col3
+Text Label 3750 -5750 1    50   ~ 0
+col4
+Text Label 4750 -5750 1    50   ~ 0
+col5
+Text Label -750 -4950 2    50   ~ 0
+row0
+Text Label -750 -4450 2    50   ~ 0
+row1
+Text Label -750 -3400 2    50   ~ 0
+row2
+$Comp
+L keyboard_parts:SW_PUSH SW1
+U 1 1 5D1C003E
+P 50 -5250
+F 0 "SW1" H 50  -4995 50  0000 C CNN
+F 1 "SW_PUSH" H 50  -5086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 50  -5250 60  0001 C CNN
+F 3 "" H 50  -5250 60  0000 C CNN
+	1    50   -5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5D1C15CE
+P 350 -5100
+F 0 "D1" V 304 -5021 50  0000 L CNN
+F 1 "D" V 395 -5021 50  0000 L CNN
+F 2 "TestKey:Diode" H 350 -5100 50  0001 C CNN
+F 3 "~" H 350 -5100 50  0001 C CNN
+	1    350  -5100
+	0    1    1    0   
+$EndComp
+Text Label 750  -5750 1    50   ~ 0
+col1
+$Comp
+L power:GND #PWR04
+U 1 1 5D3E1099
+P -3250 -2950
+F 0 "#PWR04" H -3250 -3200 50  0001 C CNN
+F 1 "GND" H -3245 -3123 50  0000 C CNN
+F 2 "" H -3250 -2950 50  0001 C CNN
+F 3 "" H -3250 -2950 50  0001 C CNN
+	1    -3250 -2950
+	1    0    0    -1  
+$EndComp
+Text Label -2650 -2950 0    50   ~ 0
+RST
+$Comp
+L keyboard_parts:SW_PUSH RESET1
+U 1 1 5D3E73F8
+P -2950 -2950
+F 0 "RESET1" H -2950 -2695 50  0000 C CNN
+F 1 "SW_PUSH" H -2950 -2786 50  0000 C CNN
+F 2 "TestKey:TSZJ36H" H -2950 -2950 60  0001 C CNN
+F 3 "" H -2950 -2950 60  0000 C CNN
+	1    -2950 -2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J2
+U 1 1 5D5FF5DC
+P -2850 -3700
+F 0 "J2" H -2822 -3674 50  0000 L CNN
+F 1 "Conn_01x03_Female" H -2822 -3765 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H -2850 -3700 50  0001 C CNN
+F 3 "~" H -2850 -3700 50  0001 C CNN
+	1    -2850 -3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR011
+U 1 1 5D600ADD
+P -3050 -3800
+F 0 "#PWR011" H -3050 -3950 50  0001 C CNN
+F 1 "VCC" H -3033 -3627 50  0000 C CNN
+F 2 "" H -3050 -3800 50  0001 C CNN
+F 3 "" H -3050 -3800 50  0001 C CNN
+	1    -3050 -3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR013
+U 1 1 5D601AC4
+P -2850 -3800
+F 0 "#PWR013" H -2850 -3950 50  0001 C CNN
+F 1 "VCC" H -2833 -3627 50  0000 C CNN
+F 2 "" H -2850 -3800 50  0001 C CNN
+F 3 "" H -2850 -3800 50  0001 C CNN
+	1    -2850 -3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5D602BF0
+P -3050 -3600
+F 0 "#PWR012" H -3050 -3850 50  0001 C CNN
+F 1 "GND" H -3045 -3773 50  0000 C CNN
+F 2 "" H -3050 -3600 50  0001 C CNN
+F 3 "" H -3050 -3600 50  0001 C CNN
+	1    -3050 -3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5D603981
+P -2850 -3600
+F 0 "#PWR014" H -2850 -3850 50  0001 C CNN
+F 1 "GND" H -2845 -3773 50  0000 C CNN
+F 2 "" H -2850 -3600 50  0001 C CNN
+F 3 "" H -2850 -3600 50  0001 C CNN
+	1    -2850 -3600
+	1    0    0    -1  
+$EndComp
+Text Label -3050 -3700 2    50   ~ 0
+LED
+Text Label -2850 -3700 0    50   ~ 0
+LED
+Text Label 5750 -5750 1    50   ~ 0
+col6
+Text Label 6750 -5750 1    50   ~ 0
+col7
+$Comp
+L keyboard_parts:SW_PUSH SW2
+U 1 1 5DADCA20
+P 50 -4750
+F 0 "SW2" H 50  -4495 50  0000 C CNN
+F 1 "SW_PUSH" H 50  -4586 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 50  -4750 60  0001 C CNN
+F 3 "" H 50  -4750 60  0000 C CNN
+	1    50   -4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 5DADCA26
+P 350 -4600
+F 0 "D2" V 304 -4521 50  0000 L CNN
+F 1 "D" V 395 -4521 50  0000 L CNN
+F 2 "TestKey:Diode" H 350 -4600 50  0001 C CNN
+F 3 "~" H 350 -4600 50  0001 C CNN
+	1    350  -4600
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW3
+U 1 1 5DADD604
+P 50 -4250
+F 0 "SW3" H 50  -3995 50  0000 C CNN
+F 1 "SW_PUSH" H 50  -4086 50  0000 C CNN
+F 2 "TestKey:Mx150H" H 50  -4250 60  0001 C CNN
+F 3 "" H 50  -4250 60  0000 C CNN
+	1    50   -4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 5DADD60A
+P 350 -3550
+F 0 "D3" V 304 -3471 50  0000 L CNN
+F 1 "D" V 395 -3471 50  0000 L CNN
+F 2 "TestKey:Diode" H 350 -3550 50  0001 C CNN
+F 3 "~" H 350 -3550 50  0001 C CNN
+	1    350  -3550
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW4
+U 1 1 5DADDCEA
+P 50 -2900
+F 0 "SW4" H 50  -2645 50  0000 C CNN
+F 1 "SW_PUSH" H 50  -2736 50  0000 C CNN
+F 2 "TestKey:Mx175H" H 50  -2900 60  0001 C CNN
+F 3 "" H 50  -2900 60  0000 C CNN
+	1    50   -2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D4
+U 1 1 5DADDCF0
+P 350 -2200
+F 0 "D4" V 304 -2121 50  0000 L CNN
+F 1 "D" V 395 -2121 50  0000 L CNN
+F 2 "TestKey:Diode" H 350 -2200 50  0001 C CNN
+F 3 "~" H 350 -2200 50  0001 C CNN
+	1    350  -2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	-250 -5750 -250 -5250
+Connection ~ -250 -5250
+Wire Wire Line
+	-250 -5250 -250 -4750
+Connection ~ -250 -4750
+Wire Wire Line
+	-250 -4750 -250 -4250
+Connection ~ 750  -4750
+Wire Wire Line
+	750  -4750 750  -4250
+Wire Wire Line
+	750  -5250 750  -4750
+Wire Wire Line
+	-750 -4950 350  -4950
+$Comp
+L Device:D D10
+U 1 1 5DAE7FAC
+P 1350 -2200
+F 0 "D10" V 1304 -2121 50  0000 L CNN
+F 1 "D" V 1395 -2121 50  0000 L CNN
+F 2 "TestKey:Diode" H 1350 -2200 50  0001 C CNN
+F 3 "~" H 1350 -2200 50  0001 C CNN
+	1    1350 -2200
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW10
+U 1 1 5DAE7FA6
+P 1050 -2900
+F 0 "SW10" H 1050 -2645 50  0000 C CNN
+F 1 "SW_PUSH" H 1050 -2736 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 1050 -2900 60  0001 C CNN
+F 3 "" H 1050 -2900 60  0000 C CNN
+	1    1050 -2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D9
+U 1 1 5DAE7FA0
+P 1350 -3550
+F 0 "D9" V 1304 -3471 50  0000 L CNN
+F 1 "D" V 1395 -3471 50  0000 L CNN
+F 2 "TestKey:Diode" H 1350 -3550 50  0001 C CNN
+F 3 "~" H 1350 -3550 50  0001 C CNN
+	1    1350 -3550
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW9
+U 1 1 5DAE7F9A
+P 1050 -4250
+F 0 "SW9" H 1050 -3995 50  0000 C CNN
+F 1 "SW_PUSH" H 1050 -4086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 1050 -4250 60  0001 C CNN
+F 3 "" H 1050 -4250 60  0000 C CNN
+	1    1050 -4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D8
+U 1 1 5DAE7F94
+P 1350 -4600
+F 0 "D8" V 1304 -4521 50  0000 L CNN
+F 1 "D" V 1395 -4521 50  0000 L CNN
+F 2 "TestKey:Diode" H 1350 -4600 50  0001 C CNN
+F 3 "~" H 1350 -4600 50  0001 C CNN
+	1    1350 -4600
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW8
+U 1 1 5DAE7F8E
+P 1050 -4750
+F 0 "SW8" H 1050 -4495 50  0000 C CNN
+F 1 "SW_PUSH" H 1050 -4586 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 1050 -4750 60  0001 C CNN
+F 3 "" H 1050 -4750 60  0000 C CNN
+	1    1050 -4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D7
+U 1 1 5DAE7F88
+P 1350 -5100
+F 0 "D7" V 1304 -5021 50  0000 L CNN
+F 1 "D" V 1395 -5021 50  0000 L CNN
+F 2 "TestKey:Diode" H 1350 -5100 50  0001 C CNN
+F 3 "~" H 1350 -5100 50  0001 C CNN
+	1    1350 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW7
+U 1 1 5DAE7F82
+P 1050 -5250
+F 0 "SW7" H 1050 -4995 50  0000 C CNN
+F 1 "SW_PUSH" H 1050 -5086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 1050 -5250 60  0001 C CNN
+F 3 "" H 1050 -5250 60  0000 C CNN
+	1    1050 -5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  -5250 750  -5750
+Connection ~ 750  -5250
+Wire Wire Line
+	-750 -4450 350  -4450
+$Comp
+L Device:D D16
+U 1 1 5DAFD26E
+P 2350 -2200
+F 0 "D16" V 2304 -2121 50  0000 L CNN
+F 1 "D" V 2395 -2121 50  0000 L CNN
+F 2 "TestKey:Diode" H 2350 -2200 50  0001 C CNN
+F 3 "~" H 2350 -2200 50  0001 C CNN
+	1    2350 -2200
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW16
+U 1 1 5DAFD274
+P 2050 -2900
+F 0 "SW16" H 2050 -2645 50  0000 C CNN
+F 1 "SW_PUSH" H 2050 -2736 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 2050 -2900 60  0001 C CNN
+F 3 "" H 2050 -2900 60  0000 C CNN
+	1    2050 -2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D15
+U 1 1 5DAFD27A
+P 2350 -3550
+F 0 "D15" V 2304 -3471 50  0000 L CNN
+F 1 "D" V 2395 -3471 50  0000 L CNN
+F 2 "TestKey:Diode" H 2350 -3550 50  0001 C CNN
+F 3 "~" H 2350 -3550 50  0001 C CNN
+	1    2350 -3550
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW15
+U 1 1 5DAFD280
+P 2050 -4250
+F 0 "SW15" H 2050 -3995 50  0000 C CNN
+F 1 "SW_PUSH" H 2050 -4086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 2050 -4250 60  0001 C CNN
+F 3 "" H 2050 -4250 60  0000 C CNN
+	1    2050 -4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D14
+U 1 1 5DAFD286
+P 2350 -4600
+F 0 "D14" V 2304 -4521 50  0000 L CNN
+F 1 "D" V 2395 -4521 50  0000 L CNN
+F 2 "TestKey:Diode" H 2350 -4600 50  0001 C CNN
+F 3 "~" H 2350 -4600 50  0001 C CNN
+	1    2350 -4600
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW14
+U 1 1 5DAFD28C
+P 2050 -4750
+F 0 "SW14" H 2050 -4495 50  0000 C CNN
+F 1 "SW_PUSH" H 2050 -4586 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 2050 -4750 60  0001 C CNN
+F 3 "" H 2050 -4750 60  0000 C CNN
+	1    2050 -4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D13
+U 1 1 5DAFD292
+P 2350 -5100
+F 0 "D13" V 2304 -5021 50  0000 L CNN
+F 1 "D" V 2395 -5021 50  0000 L CNN
+F 2 "TestKey:Diode" H 2350 -5100 50  0001 C CNN
+F 3 "~" H 2350 -5100 50  0001 C CNN
+	1    2350 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW13
+U 1 1 5DAFD298
+P 2050 -5250
+F 0 "SW13" H 2050 -4995 50  0000 C CNN
+F 1 "SW_PUSH" H 2050 -5086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 2050 -5250 60  0001 C CNN
+F 3 "" H 2050 -5250 60  0000 C CNN
+	1    2050 -5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D22
+U 1 1 5DB048A9
+P 3350 -2200
+F 0 "D22" V 3304 -2121 50  0000 L CNN
+F 1 "D" V 3395 -2121 50  0000 L CNN
+F 2 "TestKey:Diode" H 3350 -2200 50  0001 C CNN
+F 3 "~" H 3350 -2200 50  0001 C CNN
+	1    3350 -2200
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW22
+U 1 1 5DB048AF
+P 3050 -2900
+F 0 "SW22" H 3050 -2645 50  0000 C CNN
+F 1 "SW_PUSH" H 3050 -2736 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 3050 -2900 60  0001 C CNN
+F 3 "" H 3050 -2900 60  0000 C CNN
+	1    3050 -2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D21
+U 1 1 5DB048B5
+P 3350 -3550
+F 0 "D21" V 3304 -3471 50  0000 L CNN
+F 1 "D" V 3395 -3471 50  0000 L CNN
+F 2 "TestKey:Diode" H 3350 -3550 50  0001 C CNN
+F 3 "~" H 3350 -3550 50  0001 C CNN
+	1    3350 -3550
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW21
+U 1 1 5DB048BB
+P 3050 -4250
+F 0 "SW21" H 3050 -3995 50  0000 C CNN
+F 1 "SW_PUSH" H 3050 -4086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 3050 -4250 60  0001 C CNN
+F 3 "" H 3050 -4250 60  0000 C CNN
+	1    3050 -4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D20
+U 1 1 5DB048C1
+P 3350 -4600
+F 0 "D20" V 3304 -4521 50  0000 L CNN
+F 1 "D" V 3395 -4521 50  0000 L CNN
+F 2 "TestKey:Diode" H 3350 -4600 50  0001 C CNN
+F 3 "~" H 3350 -4600 50  0001 C CNN
+	1    3350 -4600
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW20
+U 1 1 5DB048C7
+P 3050 -4750
+F 0 "SW20" H 3050 -4495 50  0000 C CNN
+F 1 "SW_PUSH" H 3050 -4586 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 3050 -4750 60  0001 C CNN
+F 3 "" H 3050 -4750 60  0000 C CNN
+	1    3050 -4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D19
+U 1 1 5DB048CD
+P 3350 -5100
+F 0 "D19" V 3304 -5021 50  0000 L CNN
+F 1 "D" V 3395 -5021 50  0000 L CNN
+F 2 "TestKey:Diode" H 3350 -5100 50  0001 C CNN
+F 3 "~" H 3350 -5100 50  0001 C CNN
+	1    3350 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW19
+U 1 1 5DB048D3
+P 3050 -5250
+F 0 "SW19" H 3050 -4995 50  0000 C CNN
+F 1 "SW_PUSH" H 3050 -5086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 3050 -5250 60  0001 C CNN
+F 3 "" H 3050 -5250 60  0000 C CNN
+	1    3050 -5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D27
+U 1 1 5DB0948B
+P 4350 -2200
+F 0 "D27" V 4304 -2121 50  0000 L CNN
+F 1 "D" V 4395 -2121 50  0000 L CNN
+F 2 "TestKey:Diode" H 4350 -2200 50  0001 C CNN
+F 3 "~" H 4350 -2200 50  0001 C CNN
+	1    4350 -2200
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW27
+U 1 1 5DB09491
+P 4050 -2900
+F 0 "SW27" H 4050 -2645 50  0000 C CNN
+F 1 "SW_PUSH" H 4050 -2736 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 4050 -2900 60  0001 C CNN
+F 3 "" H 4050 -2900 60  0000 C CNN
+	1    4050 -2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D26
+U 1 1 5DB09497
+P 4350 -3550
+F 0 "D26" V 4304 -3471 50  0000 L CNN
+F 1 "D" V 4395 -3471 50  0000 L CNN
+F 2 "TestKey:Diode" H 4350 -3550 50  0001 C CNN
+F 3 "~" H 4350 -3550 50  0001 C CNN
+	1    4350 -3550
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW26
+U 1 1 5DB0949D
+P 4050 -4250
+F 0 "SW26" H 4050 -3995 50  0000 C CNN
+F 1 "SW_PUSH" H 4050 -4086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 4050 -4250 60  0001 C CNN
+F 3 "" H 4050 -4250 60  0000 C CNN
+	1    4050 -4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D25
+U 1 1 5DB094A3
+P 4350 -4600
+F 0 "D25" V 4304 -4521 50  0000 L CNN
+F 1 "D" V 4395 -4521 50  0000 L CNN
+F 2 "TestKey:Diode" H 4350 -4600 50  0001 C CNN
+F 3 "~" H 4350 -4600 50  0001 C CNN
+	1    4350 -4600
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW25
+U 1 1 5DB094A9
+P 4050 -4750
+F 0 "SW25" H 4050 -4495 50  0000 C CNN
+F 1 "SW_PUSH" H 4050 -4586 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 4050 -4750 60  0001 C CNN
+F 3 "" H 4050 -4750 60  0000 C CNN
+	1    4050 -4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D24
+U 1 1 5DB094AF
+P 4350 -5100
+F 0 "D24" V 4304 -5021 50  0000 L CNN
+F 1 "D" V 4395 -5021 50  0000 L CNN
+F 2 "TestKey:Diode" H 4350 -5100 50  0001 C CNN
+F 3 "~" H 4350 -5100 50  0001 C CNN
+	1    4350 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW24
+U 1 1 5DB094B5
+P 4050 -5250
+F 0 "SW24" H 4050 -4995 50  0000 C CNN
+F 1 "SW_PUSH" H 4050 -5086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 4050 -5250 60  0001 C CNN
+F 3 "" H 4050 -5250 60  0000 C CNN
+	1    4050 -5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D32
+U 1 1 5DB0B671
+P 5350 -2200
+F 0 "D32" V 5304 -2121 50  0000 L CNN
+F 1 "D" V 5395 -2121 50  0000 L CNN
+F 2 "TestKey:Diode" H 5350 -2200 50  0001 C CNN
+F 3 "~" H 5350 -2200 50  0001 C CNN
+	1    5350 -2200
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW32
+U 1 1 5DB0B677
+P 5050 -2900
+F 0 "SW32" H 5050 -2645 50  0000 C CNN
+F 1 "SW_PUSH" H 5050 -2736 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 5050 -2900 60  0001 C CNN
+F 3 "" H 5050 -2900 60  0000 C CNN
+	1    5050 -2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D31
+U 1 1 5DB0B67D
+P 5350 -3550
+F 0 "D31" V 5304 -3471 50  0000 L CNN
+F 1 "D" V 5395 -3471 50  0000 L CNN
+F 2 "TestKey:Diode" H 5350 -3550 50  0001 C CNN
+F 3 "~" H 5350 -3550 50  0001 C CNN
+	1    5350 -3550
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW31
+U 1 1 5DB0B683
+P 5050 -4250
+F 0 "SW31" H 5050 -3995 50  0000 C CNN
+F 1 "SW_PUSH" H 5050 -4086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 5050 -4250 60  0001 C CNN
+F 3 "" H 5050 -4250 60  0000 C CNN
+	1    5050 -4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D30
+U 1 1 5DB0B689
+P 5350 -4600
+F 0 "D30" V 5304 -4521 50  0000 L CNN
+F 1 "D" V 5395 -4521 50  0000 L CNN
+F 2 "TestKey:Diode" H 5350 -4600 50  0001 C CNN
+F 3 "~" H 5350 -4600 50  0001 C CNN
+	1    5350 -4600
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW30
+U 1 1 5DB0B68F
+P 5050 -4750
+F 0 "SW30" H 5050 -4495 50  0000 C CNN
+F 1 "SW_PUSH" H 5050 -4586 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 5050 -4750 60  0001 C CNN
+F 3 "" H 5050 -4750 60  0000 C CNN
+	1    5050 -4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D29
+U 1 1 5DB0B695
+P 5350 -5100
+F 0 "D29" V 5304 -5021 50  0000 L CNN
+F 1 "D" V 5395 -5021 50  0000 L CNN
+F 2 "TestKey:Diode" H 5350 -5100 50  0001 C CNN
+F 3 "~" H 5350 -5100 50  0001 C CNN
+	1    5350 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW29
+U 1 1 5DB0B69B
+P 5050 -5250
+F 0 "SW29" H 5050 -4995 50  0000 C CNN
+F 1 "SW_PUSH" H 5050 -5086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 5050 -5250 60  0001 C CNN
+F 3 "" H 5050 -5250 60  0000 C CNN
+	1    5050 -5250
+	1    0    0    -1  
+$EndComp
+Text Label -5900 -3050 2    50   ~ 0
+col8
+Text Label -5900 -2950 2    50   ~ 0
+col9
+Text Label 7750 -5750 1    50   ~ 0
+col8
+Text Label 8750 -5750 1    50   ~ 0
+col9
+$Comp
+L Device:D D38
+U 1 1 5D9D5DE7
+P 6350 -2200
+F 0 "D38" V 6304 -2121 50  0000 L CNN
+F 1 "D" V 6395 -2121 50  0000 L CNN
+F 2 "TestKey:Diode" H 6350 -2200 50  0001 C CNN
+F 3 "~" H 6350 -2200 50  0001 C CNN
+	1    6350 -2200
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW38
+U 1 1 5D9D5DED
+P 6050 -2900
+F 0 "SW38" H 6050 -2645 50  0000 C CNN
+F 1 "SW_PUSH" H 6050 -2736 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 6050 -2900 60  0001 C CNN
+F 3 "" H 6050 -2900 60  0000 C CNN
+	1    6050 -2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D37
+U 1 1 5D9D5DF3
+P 6350 -3550
+F 0 "D37" V 6304 -3471 50  0000 L CNN
+F 1 "D" V 6395 -3471 50  0000 L CNN
+F 2 "TestKey:Diode" H 6350 -3550 50  0001 C CNN
+F 3 "~" H 6350 -3550 50  0001 C CNN
+	1    6350 -3550
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW37
+U 1 1 5D9D5DF9
+P 6050 -4250
+F 0 "SW37" H 6050 -3995 50  0000 C CNN
+F 1 "SW_PUSH" H 6050 -4086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 6050 -4250 60  0001 C CNN
+F 3 "" H 6050 -4250 60  0000 C CNN
+	1    6050 -4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D36
+U 1 1 5D9D5DFF
+P 6350 -4600
+F 0 "D36" V 6304 -4521 50  0000 L CNN
+F 1 "D" V 6395 -4521 50  0000 L CNN
+F 2 "TestKey:Diode" H 6350 -4600 50  0001 C CNN
+F 3 "~" H 6350 -4600 50  0001 C CNN
+	1    6350 -4600
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW36
+U 1 1 5D9D5E05
+P 6050 -4750
+F 0 "SW36" H 6050 -4495 50  0000 C CNN
+F 1 "SW_PUSH" H 6050 -4586 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 6050 -4750 60  0001 C CNN
+F 3 "" H 6050 -4750 60  0000 C CNN
+	1    6050 -4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D35
+U 1 1 5D9D5E0B
+P 6350 -5100
+F 0 "D35" V 6304 -5021 50  0000 L CNN
+F 1 "D" V 6395 -5021 50  0000 L CNN
+F 2 "TestKey:Diode" H 6350 -5100 50  0001 C CNN
+F 3 "~" H 6350 -5100 50  0001 C CNN
+	1    6350 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW35
+U 1 1 5D9D5E11
+P 6050 -5250
+F 0 "SW35" H 6050 -4995 50  0000 C CNN
+F 1 "SW_PUSH" H 6050 -5086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 6050 -5250 60  0001 C CNN
+F 3 "" H 6050 -5250 60  0000 C CNN
+	1    6050 -5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D43
+U 1 1 5D9DCC96
+P 7350 -2200
+F 0 "D43" V 7304 -2121 50  0000 L CNN
+F 1 "D" V 7395 -2121 50  0000 L CNN
+F 2 "TestKey:Diode" H 7350 -2200 50  0001 C CNN
+F 3 "~" H 7350 -2200 50  0001 C CNN
+	1    7350 -2200
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW43
+U 1 1 5D9DCC9C
+P 7050 -2900
+F 0 "SW43" H 7050 -2645 50  0000 C CNN
+F 1 "SW_PUSH" H 7050 -2736 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 7050 -2900 60  0001 C CNN
+F 3 "" H 7050 -2900 60  0000 C CNN
+	1    7050 -2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D42
+U 1 1 5D9DCCA2
+P 7350 -3550
+F 0 "D42" V 7304 -3471 50  0000 L CNN
+F 1 "D" V 7395 -3471 50  0000 L CNN
+F 2 "TestKey:Diode" H 7350 -3550 50  0001 C CNN
+F 3 "~" H 7350 -3550 50  0001 C CNN
+	1    7350 -3550
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW42
+U 1 1 5D9DCCA8
+P 7050 -4250
+F 0 "SW42" H 7050 -3995 50  0000 C CNN
+F 1 "SW_PUSH" H 7050 -4086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 7050 -4250 60  0001 C CNN
+F 3 "" H 7050 -4250 60  0000 C CNN
+	1    7050 -4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D41
+U 1 1 5D9DCCAE
+P 7350 -4600
+F 0 "D41" V 7304 -4521 50  0000 L CNN
+F 1 "D" V 7395 -4521 50  0000 L CNN
+F 2 "TestKey:Diode" H 7350 -4600 50  0001 C CNN
+F 3 "~" H 7350 -4600 50  0001 C CNN
+	1    7350 -4600
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW41
+U 1 1 5D9DCCB4
+P 7050 -4750
+F 0 "SW41" H 7050 -4495 50  0000 C CNN
+F 1 "SW_PUSH" H 7050 -4586 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 7050 -4750 60  0001 C CNN
+F 3 "" H 7050 -4750 60  0000 C CNN
+	1    7050 -4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D40
+U 1 1 5D9DCCBA
+P 7350 -5100
+F 0 "D40" V 7304 -5021 50  0000 L CNN
+F 1 "D" V 7395 -5021 50  0000 L CNN
+F 2 "TestKey:Diode" H 7350 -5100 50  0001 C CNN
+F 3 "~" H 7350 -5100 50  0001 C CNN
+	1    7350 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW40
+U 1 1 5D9DCCC0
+P 7050 -5250
+F 0 "SW40" H 7050 -4995 50  0000 C CNN
+F 1 "SW_PUSH" H 7050 -5086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 7050 -5250 60  0001 C CNN
+F 3 "" H 7050 -5250 60  0000 C CNN
+	1    7050 -5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW45
+U 1 1 5D9DCCC6
+P 8050 -5250
+F 0 "SW45" H 8050 -4995 50  0000 C CNN
+F 1 "SW_PUSH" H 8050 -5086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 8050 -5250 60  0001 C CNN
+F 3 "" H 8050 -5250 60  0000 C CNN
+	1    8050 -5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D45
+U 1 1 5D9DCCCC
+P 8350 -5100
+F 0 "D45" V 8304 -5021 50  0000 L CNN
+F 1 "D" V 8395 -5021 50  0000 L CNN
+F 2 "TestKey:Diode" H 8350 -5100 50  0001 C CNN
+F 3 "~" H 8350 -5100 50  0001 C CNN
+	1    8350 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D50
+U 1 1 5D9E2D3B
+P 9350 -5100
+F 0 "D50" V 9304 -5021 50  0000 L CNN
+F 1 "D" V 9395 -5021 50  0000 L CNN
+F 2 "TestKey:Diode" H 9350 -5100 50  0001 C CNN
+F 3 "~" H 9350 -5100 50  0001 C CNN
+	1    9350 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW50
+U 1 1 5D9E2D41
+P 9050 -5250
+F 0 "SW50" H 9050 -4995 50  0000 C CNN
+F 1 "SW_PUSH" H 9050 -5086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 9050 -5250 60  0001 C CNN
+F 3 "" H 9050 -5250 60  0000 C CNN
+	1    9050 -5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D48
+U 1 1 5D9E2D53
+P 8350 -2200
+F 0 "D48" V 8304 -2121 50  0000 L CNN
+F 1 "D" V 8395 -2121 50  0000 L CNN
+F 2 "TestKey:Diode" H 8350 -2200 50  0001 C CNN
+F 3 "~" H 8350 -2200 50  0001 C CNN
+	1    8350 -2200
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW48
+U 1 1 5D9E2D59
+P 8050 -2900
+F 0 "SW48" H 8050 -2645 50  0000 C CNN
+F 1 "SW_PUSH" H 8050 -2736 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 8050 -2900 60  0001 C CNN
+F 3 "" H 8050 -2900 60  0000 C CNN
+	1    8050 -2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D47
+U 1 1 5D9E2D5F
+P 8350 -3550
+F 0 "D47" V 8304 -3471 50  0000 L CNN
+F 1 "D" V 8395 -3471 50  0000 L CNN
+F 2 "TestKey:Diode" H 8350 -3550 50  0001 C CNN
+F 3 "~" H 8350 -3550 50  0001 C CNN
+	1    8350 -3550
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW47
+U 1 1 5D9E2D65
+P 8050 -4250
+F 0 "SW47" H 8050 -3995 50  0000 C CNN
+F 1 "SW_PUSH" H 8050 -4086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 8050 -4250 60  0001 C CNN
+F 3 "" H 8050 -4250 60  0000 C CNN
+	1    8050 -4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D46
+U 1 1 5D9E2D6B
+P 8350 -4600
+F 0 "D46" V 8304 -4521 50  0000 L CNN
+F 1 "D" V 8395 -4521 50  0000 L CNN
+F 2 "TestKey:Diode" H 8350 -4600 50  0001 C CNN
+F 3 "~" H 8350 -4600 50  0001 C CNN
+	1    8350 -4600
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW46
+U 1 1 5D9E2D71
+P 8050 -4750
+F 0 "SW46" H 8050 -4495 50  0000 C CNN
+F 1 "SW_PUSH" H 8050 -4586 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 8050 -4750 60  0001 C CNN
+F 3 "" H 8050 -4750 60  0000 C CNN
+	1    8050 -4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW51
+U 1 1 5D9E2D77
+P 9050 -4750
+F 0 "SW51" H 9050 -4495 50  0000 C CNN
+F 1 "SW_PUSH" H 9050 -4586 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 9050 -4750 60  0001 C CNN
+F 3 "" H 9050 -4750 60  0000 C CNN
+	1    9050 -4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D51
+U 1 1 5D9E2D7D
+P 9350 -4600
+F 0 "D51" V 9304 -4521 50  0000 L CNN
+F 1 "D" V 9395 -4521 50  0000 L CNN
+F 2 "TestKey:Diode" H 9350 -4600 50  0001 C CNN
+F 3 "~" H 9350 -4600 50  0001 C CNN
+	1    9350 -4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D53
+U 1 1 5D9EF397
+P 9350 -2200
+F 0 "D53" V 9304 -2121 50  0000 L CNN
+F 1 "D" V 9395 -2121 50  0000 L CNN
+F 2 "TestKey:Diode" H 9350 -2200 50  0001 C CNN
+F 3 "~" H 9350 -2200 50  0001 C CNN
+	1    9350 -2200
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW53
+U 1 1 5D9EF39D
+P 9050 -2900
+F 0 "SW53" H 9050 -2645 50  0000 C CNN
+F 1 "SW_PUSH" H 9050 -2736 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 9050 -2900 60  0001 C CNN
+F 3 "" H 9050 -2900 60  0000 C CNN
+	1    9050 -2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D52
+U 1 1 5D9EF3A3
+P 9350 -3550
+F 0 "D52" V 9304 -3471 50  0000 L CNN
+F 1 "D" V 9395 -3471 50  0000 L CNN
+F 2 "TestKey:Diode" H 9350 -3550 50  0001 C CNN
+F 3 "~" H 9350 -3550 50  0001 C CNN
+	1    9350 -3550
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW52
+U 1 1 5D9EF3A9
+P 9050 -4250
+F 0 "SW52" H 9050 -3995 50  0000 C CNN
+F 1 "SW_PUSH" H 9050 -4086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 9050 -4250 60  0001 C CNN
+F 3 "" H 9050 -4250 60  0000 C CNN
+	1    9050 -4250
+	1    0    0    -1  
+$EndComp
+Connection ~ 350  -4950
+Wire Wire Line
+	350  -4950 1350 -4950
+Connection ~ 350  -4450
+Wire Wire Line
+	350  -4450 1350 -4450
+Connection ~ 350  -3400
+Wire Wire Line
+	1750 -5750 1750 -5250
+Connection ~ 1750 -5250
+Wire Wire Line
+	1750 -5250 1750 -4750
+Connection ~ 1750 -4750
+Wire Wire Line
+	1750 -4750 1750 -4250
+Connection ~ 2750 -5250
+Wire Wire Line
+	2750 -5250 2750 -5750
+Connection ~ 2750 -4750
+Wire Wire Line
+	2750 -4750 2750 -5250
+Wire Wire Line
+	2750 -4250 2750 -4750
+Wire Wire Line
+	3750 -5750 3750 -5250
+Connection ~ 3750 -5250
+Wire Wire Line
+	3750 -5250 3750 -4750
+Connection ~ 3750 -4750
+Wire Wire Line
+	3750 -4750 3750 -4250
+Connection ~ 4750 -5250
+Wire Wire Line
+	4750 -5250 4750 -5750
+Connection ~ 4750 -4750
+Wire Wire Line
+	4750 -4750 4750 -5250
+Wire Wire Line
+	4750 -4250 4750 -4750
+Wire Wire Line
+	5750 -5750 5750 -5250
+Connection ~ 5750 -5250
+Wire Wire Line
+	5750 -5250 5750 -4750
+Connection ~ 5750 -4750
+Wire Wire Line
+	5750 -4750 5750 -4250
+Connection ~ 6750 -5250
+Wire Wire Line
+	6750 -5250 6750 -5750
+Connection ~ 6750 -4750
+Wire Wire Line
+	6750 -4750 6750 -5250
+Wire Wire Line
+	6750 -4250 6750 -4750
+Wire Wire Line
+	7750 -5750 7750 -5250
+Connection ~ 7750 -5250
+Wire Wire Line
+	7750 -5250 7750 -4750
+Connection ~ 7750 -4750
+Wire Wire Line
+	7750 -4750 7750 -4250
+Connection ~ 8750 -5250
+Wire Wire Line
+	8750 -5250 8750 -5750
+Connection ~ 8750 -4750
+Wire Wire Line
+	8750 -4750 8750 -5250
+Wire Wire Line
+	8750 -4250 8750 -4750
+Connection ~ 1350 -4950
+Connection ~ 2350 -4950
+Wire Wire Line
+	2350 -4950 1350 -4950
+Connection ~ 3350 -4950
+Wire Wire Line
+	3350 -4950 2350 -4950
+Connection ~ 4350 -4950
+Wire Wire Line
+	4350 -4950 3350 -4950
+Connection ~ 5350 -4950
+Wire Wire Line
+	5350 -4950 4350 -4950
+Connection ~ 6350 -4950
+Wire Wire Line
+	6350 -4950 5350 -4950
+Connection ~ 7350 -4950
+Wire Wire Line
+	7350 -4950 6350 -4950
+Connection ~ 8350 -4950
+Wire Wire Line
+	8350 -4950 7350 -4950
+Wire Wire Line
+	9350 -4950 8350 -4950
+Wire Wire Line
+	1350 -4450 2350 -4450
+Connection ~ 1350 -4450
+Connection ~ 2350 -4450
+Wire Wire Line
+	2350 -4450 3350 -4450
+Connection ~ 3350 -4450
+Wire Wire Line
+	3350 -4450 4350 -4450
+Connection ~ 4350 -4450
+Wire Wire Line
+	4350 -4450 5350 -4450
+Connection ~ 5350 -4450
+Wire Wire Line
+	5350 -4450 6350 -4450
+Connection ~ 6350 -4450
+Wire Wire Line
+	6350 -4450 7350 -4450
+Connection ~ 7350 -4450
+Wire Wire Line
+	7350 -4450 8350 -4450
+Connection ~ 8350 -4450
+Wire Wire Line
+	8350 -4450 9350 -4450
+Connection ~ 1350 -3400
+Connection ~ 2350 -3400
+Connection ~ 3350 -3400
+Connection ~ 4350 -3400
+Connection ~ 5350 -3400
+Connection ~ 6350 -3400
+Connection ~ 7350 -3400
+Connection ~ 8350 -3400
+$Comp
+L promicro:BLEMicroPro U1
+U 1 1 5DF21026
+P -5200 -3350
+F 0 "U1" H -5200 -2313 60  0000 C CNN
+F 1 "ProMicro" H -5200 -2419 60  0000 C CNN
+F 2 "Keebio-Parts:ArduinoBLEMicroPro_BSilik_ConSuru" H -5100 -4400 60  0001 C CNN
+F 3 "" H -5100 -4400 60  0000 C CNN
+	1    -5200 -3350
+	1    0    0    -1  
+$EndComp
+Text Label -750 -2050 2    50   ~ 0
+row3
+Wire Wire Line
+	-750 -2050 350  -2050
+Text Label -750 -150 2    50   ~ 0
+row4
+Text Label -750 1200 2    50   ~ 0
+row5
+$Comp
+L keyboard_parts:SW_PUSH SW5
+U 1 1 5DADE688
+P 50 -450
+F 0 "SW5" H 50  -195 50  0000 C CNN
+F 1 "SW_PUSH" H 50  -286 50  0000 C CNN
+F 2 "TestKey:Mx225H" H 50  -450 60  0001 C CNN
+F 3 "" H 50  -450 60  0000 C CNN
+	1    50   -450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D5
+U 1 1 5DADE68E
+P 350 -300
+F 0 "D5" V 304 -221 50  0000 L CNN
+F 1 "D" V 395 -221 50  0000 L CNN
+F 2 "TestKey:Diode" H 350 -300 50  0001 C CNN
+F 3 "~" H 350 -300 50  0001 C CNN
+	1    350  -300
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW6
+U 1 1 5DADEF36
+P 50 50
+F 0 "SW6" H 50  305 50  0000 C CNN
+F 1 "SW_PUSH" H 50  214 50  0000 C CNN
+F 2 "TestKey:Mx125H" H 50  50  60  0001 C CNN
+F 3 "" H 50  50  60  0000 C CNN
+	1    50   50  
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D6
+U 1 1 5DADEF3C
+P 350 1050
+F 0 "D6" V 304 1129 50  0000 L CNN
+F 1 "D" V 395 1129 50  0000 L CNN
+F 2 "TestKey:Diode" H 350 1050 50  0001 C CNN
+F 3 "~" H 350 1050 50  0001 C CNN
+	1    350  1050
+	0    1    1    0   
+$EndComp
+Connection ~ -250 -450
+Wire Wire Line
+	-250 -450 -250 50  
+$Comp
+L keyboard_parts:SW_PUSH SW12
+U 1 1 5DAE7FBE
+P 1050 50
+F 0 "SW12" H 1050 305 50  0000 C CNN
+F 1 "SW_PUSH" H 1050 214 50  0000 C CNN
+F 2 "TestKey:Mx125H" H 1050 50  60  0001 C CNN
+F 3 "" H 1050 50  60  0000 C CNN
+	1    1050 50  
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D12
+U 1 1 5DAE7FC4
+P 1350 1050
+F 0 "D12" V 1304 1129 50  0000 L CNN
+F 1 "D" V 1395 1129 50  0000 L CNN
+F 2 "TestKey:Diode" H 1350 1050 50  0001 C CNN
+F 3 "~" H 1350 1050 50  0001 C CNN
+	1    1350 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D11
+U 1 1 5DAE7FB8
+P 1350 -300
+F 0 "D11" V 1304 -221 50  0000 L CNN
+F 1 "D" V 1395 -221 50  0000 L CNN
+F 2 "TestKey:Diode" H 1350 -300 50  0001 C CNN
+F 3 "~" H 1350 -300 50  0001 C CNN
+	1    1350 -300
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW11
+U 1 1 5DAE7FB2
+P 1050 -450
+F 0 "SW11" H 1050 -195 50  0000 C CNN
+F 1 "SW_PUSH" H 1050 -286 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 1050 -450 60  0001 C CNN
+F 3 "" H 1050 -450 60  0000 C CNN
+	1    1050 -450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-750 -150 350  -150
+Wire Wire Line
+	-750 1200 350  1200
+$Comp
+L Device:D D17
+U 1 1 5DAFD262
+P 2350 -300
+F 0 "D17" V 2304 -221 50  0000 L CNN
+F 1 "D" V 2395 -221 50  0000 L CNN
+F 2 "TestKey:Diode" H 2350 -300 50  0001 C CNN
+F 3 "~" H 2350 -300 50  0001 C CNN
+	1    2350 -300
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW17
+U 1 1 5DAFD268
+P 2050 -450
+F 0 "SW17" H 2050 -195 50  0000 C CNN
+F 1 "SW_PUSH" H 2050 -286 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 2050 -450 60  0001 C CNN
+F 3 "" H 2050 -450 60  0000 C CNN
+	1    2050 -450
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW18
+U 1 1 5DB04891
+P 2050 50
+F 0 "SW18" H 2050 305 50  0000 C CNN
+F 1 "SW_PUSH" H 2050 214 50  0000 C CNN
+F 2 "TestKey:Mx125H" H 2050 50  60  0001 C CNN
+F 3 "" H 2050 50  60  0000 C CNN
+	1    2050 50  
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D18
+U 1 1 5DB04897
+P 2350 1050
+F 0 "D18" V 2304 1129 50  0000 L CNN
+F 1 "D" V 2395 1129 50  0000 L CNN
+F 2 "TestKey:Diode" H 2350 1050 50  0001 C CNN
+F 3 "~" H 2350 1050 50  0001 C CNN
+	1    2350 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW23
+U 1 1 5DB09473
+P 3050 -450
+F 0 "SW23" H 3050 -195 50  0000 C CNN
+F 1 "SW_PUSH" H 3050 -286 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 3050 -450 60  0001 C CNN
+F 3 "" H 3050 -450 60  0000 C CNN
+	1    3050 -450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D23
+U 1 1 5DB09479
+P 3350 -300
+F 0 "D23" V 3304 -221 50  0000 L CNN
+F 1 "D" V 3395 -221 50  0000 L CNN
+F 2 "TestKey:Diode" H 3350 -300 50  0001 C CNN
+F 3 "~" H 3350 -300 50  0001 C CNN
+	1    3350 -300
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW28
+U 1 1 5DB0B659
+P 4050 -450
+F 0 "SW28" H 4050 -195 50  0000 C CNN
+F 1 "SW_PUSH" H 4050 -286 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 4050 -450 60  0001 C CNN
+F 3 "" H 4050 -450 60  0000 C CNN
+	1    4050 -450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D28
+U 1 1 5DB0B65F
+P 4350 -300
+F 0 "D28" V 4304 -221 50  0000 L CNN
+F 1 "D" V 4395 -221 50  0000 L CNN
+F 2 "TestKey:Diode" H 4350 -300 50  0001 C CNN
+F 3 "~" H 4350 -300 50  0001 C CNN
+	1    4350 -300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D33
+U 1 1 5DB0B665
+P 5350 -300
+F 0 "D33" V 5304 -221 50  0000 L CNN
+F 1 "D" V 5395 -221 50  0000 L CNN
+F 2 "TestKey:Diode" H 5350 -300 50  0001 C CNN
+F 3 "~" H 5350 -300 50  0001 C CNN
+	1    5350 -300
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW33
+U 1 1 5DB0B66B
+P 5050 -450
+F 0 "SW33" H 5050 -195 50  0000 C CNN
+F 1 "SW_PUSH" H 5050 -286 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 5050 -450 60  0001 C CNN
+F 3 "" H 5050 -450 60  0000 C CNN
+	1    5050 -450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D34
+U 1 1 5D9D5E17
+P 5350 1050
+F 0 "D34" V 5304 1129 50  0000 L CNN
+F 1 "D" V 5395 1129 50  0000 L CNN
+F 2 "TestKey:Diode" H 5350 1050 50  0001 C CNN
+F 3 "~" H 5350 1050 50  0001 C CNN
+	1    5350 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW34
+U 1 1 5D9D5E1D
+P 5050 50
+F 0 "SW34" H 5050 305 50  0000 C CNN
+F 1 "SW_PUSH" H 5050 214 50  0000 C CNN
+F 2 "TestKey:Mx625H" H 5050 50  60  0001 C CNN
+F 3 "" H 5050 50  60  0000 C CNN
+	1    5050 50  
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW39
+U 1 1 5D9D5E23
+P 6050 -450
+F 0 "SW39" H 6050 -195 50  0000 C CNN
+F 1 "SW_PUSH" H 6050 -286 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 6050 -450 60  0001 C CNN
+F 3 "" H 6050 -450 60  0000 C CNN
+	1    6050 -450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D39
+U 1 1 5D9D5E29
+P 6350 -300
+F 0 "D39" V 6304 -221 50  0000 L CNN
+F 1 "D" V 6395 -221 50  0000 L CNN
+F 2 "TestKey:Diode" H 6350 -300 50  0001 C CNN
+F 3 "~" H 6350 -300 50  0001 C CNN
+	1    6350 -300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D44
+U 1 1 5D9DCC8A
+P 7350 -300
+F 0 "D44" V 7304 -221 50  0000 L CNN
+F 1 "D" V 7395 -221 50  0000 L CNN
+F 2 "TestKey:Diode" H 7350 -300 50  0001 C CNN
+F 3 "~" H 7350 -300 50  0001 C CNN
+	1    7350 -300
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW44
+U 1 1 5D9DCC90
+P 7050 -450
+F 0 "SW44" H 7050 -195 50  0000 C CNN
+F 1 "SW_PUSH" H 7050 -286 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 7050 -450 60  0001 C CNN
+F 3 "" H 7050 -450 60  0000 C CNN
+	1    7050 -450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D49
+U 1 1 5D9E2D47
+P 8350 -300
+F 0 "D49" V 8304 -221 50  0000 L CNN
+F 1 "D" V 8395 -221 50  0000 L CNN
+F 2 "TestKey:Diode" H 8350 -300 50  0001 C CNN
+F 3 "~" H 8350 -300 50  0001 C CNN
+	1    8350 -300
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW49
+U 1 1 5D9E2D4D
+P 8050 -450
+F 0 "SW49" H 8050 -195 50  0000 C CNN
+F 1 "SW_PUSH" H 8050 -286 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 8050 -450 60  0001 C CNN
+F 3 "" H 8050 -450 60  0000 C CNN
+	1    8050 -450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D55
+U 1 1 5D9EF37F
+P 9350 1050
+F 0 "D55" V 9304 1129 50  0000 L CNN
+F 1 "D" V 9395 1129 50  0000 L CNN
+F 2 "TestKey:Diode" H 9350 1050 50  0001 C CNN
+F 3 "~" H 9350 1050 50  0001 C CNN
+	1    9350 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW55
+U 1 1 5D9EF385
+P 9050 50
+F 0 "SW55" H 9050 305 50  0000 C CNN
+F 1 "SW_PUSH" H 9050 214 50  0000 C CNN
+F 2 "TestKey:Mx125H" H 9050 50  60  0001 C CNN
+F 3 "" H 9050 50  60  0000 C CNN
+	1    9050 50  
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D54
+U 1 1 5D9EF38B
+P 9350 -300
+F 0 "D54" V 9304 -221 50  0000 L CNN
+F 1 "D" V 9395 -221 50  0000 L CNN
+F 2 "TestKey:Diode" H 9350 -300 50  0001 C CNN
+F 3 "~" H 9350 -300 50  0001 C CNN
+	1    9350 -300
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW54
+U 1 1 5D9EF391
+P 9050 -450
+F 0 "SW54" H 9050 -195 50  0000 C CNN
+F 1 "SW_PUSH" H 9050 -286 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 9050 -450 60  0001 C CNN
+F 3 "" H 9050 -450 60  0000 C CNN
+	1    9050 -450
+	1    0    0    -1  
+$EndComp
+Connection ~ 350  -150
+Wire Wire Line
+	350  -150 1350 -150
+$Comp
+L Device:D D108
+U 1 1 5DB7531A
+P 6350 1050
+F 0 "D108" V 6304 1129 50  0000 L CNN
+F 1 "D" V 6395 1129 50  0000 L CNN
+F 2 "TestKey:Diode" H 6350 1050 50  0001 C CNN
+F 3 "~" H 6350 1050 50  0001 C CNN
+	1    6350 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW108
+U 1 1 5DB75320
+P 6050 50
+F 0 "SW108" H 6050 305 50  0000 C CNN
+F 1 "SW_PUSH" H 6050 214 50  0000 C CNN
+F 2 "TestKey:Mx125H" H 6050 50  60  0001 C CNN
+F 3 "" H 6050 50  60  0000 C CNN
+	1    6050 50  
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW106
+U 1 1 5DB75338
+P 3050 50
+F 0 "SW106" H 3050 305 50  0000 C CNN
+F 1 "SW_PUSH" H 3050 214 50  0000 C CNN
+F 2 "TestKey:Mx125H" H 3050 50  60  0001 C CNN
+F 3 "" H 3050 50  60  0000 C CNN
+	1    3050 50  
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D106
+U 1 1 5DB75332
+P 3350 1050
+F 0 "D106" V 3304 1129 50  0000 L CNN
+F 1 "D" V 3395 1129 50  0000 L CNN
+F 2 "TestKey:Diode" H 3350 1050 50  0001 C CNN
+F 3 "~" H 3350 1050 50  0001 C CNN
+	1    3350 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW107
+U 1 1 5DB7532C
+P 4050 50
+F 0 "SW107" H 4050 305 50  0000 C CNN
+F 1 "SW_PUSH" H 4050 214 50  0000 C CNN
+F 2 "TestKey:Mx125H" H 4050 50  60  0001 C CNN
+F 3 "" H 4050 50  60  0000 C CNN
+	1    4050 50  
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D107
+U 1 1 5DB75326
+P 4350 1050
+F 0 "D107" V 4304 1129 50  0000 L CNN
+F 1 "D" V 4395 1129 50  0000 L CNN
+F 2 "TestKey:Diode" H 4350 1050 50  0001 C CNN
+F 3 "~" H 4350 1050 50  0001 C CNN
+	1    4350 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW109
+U 1 1 5DD77395
+P 7050 50
+F 0 "SW109" H 7050 305 50  0000 C CNN
+F 1 "SW_PUSH" H 7050 214 50  0000 C CNN
+F 2 "TestKey:Mx125H" H 7050 50  60  0001 C CNN
+F 3 "" H 7050 50  60  0000 C CNN
+	1    7050 50  
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D109
+U 1 1 5DD7739B
+P 7350 1050
+F 0 "D109" V 7304 1129 50  0000 L CNN
+F 1 "D" V 7395 1129 50  0000 L CNN
+F 2 "TestKey:Diode" H 7350 1050 50  0001 C CNN
+F 3 "~" H 7350 1050 50  0001 C CNN
+	1    7350 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	750  50   750  -450
+Connection ~ 750  -450
+Connection ~ 1750 -450
+Wire Wire Line
+	1750 -450 1750 50  
+Wire Wire Line
+	2750 50   2750 -450
+Connection ~ 2750 -450
+Connection ~ 3750 -450
+Wire Wire Line
+	3750 -450 3750 50  
+Wire Wire Line
+	4750 50   4750 -450
+Connection ~ 4750 -450
+Connection ~ 5750 -450
+Wire Wire Line
+	5750 -450 5750 50  
+Wire Wire Line
+	6750 50   6750 -450
+Wire Wire Line
+	8750 50   8750 -450
+Connection ~ 8750 -450
+Connection ~ 1350 -150
+Connection ~ 2350 -150
+Wire Wire Line
+	2350 -150 1350 -150
+Connection ~ 3350 -150
+Wire Wire Line
+	3350 -150 2350 -150
+Connection ~ 4350 -150
+Wire Wire Line
+	4350 -150 3350 -150
+Connection ~ 5350 -150
+Wire Wire Line
+	5350 -150 4350 -150
+Connection ~ 6350 -150
+Wire Wire Line
+	6350 -150 5350 -150
+Connection ~ 7350 -150
+Wire Wire Line
+	7350 -150 6350 -150
+Connection ~ 8350 -150
+Wire Wire Line
+	8350 -150 7350 -150
+Wire Wire Line
+	9350 -150 8350 -150
+Wire Wire Line
+	350  1200 1350 1200
+Connection ~ 350  1200
+Connection ~ 1350 1200
+Wire Wire Line
+	1350 1200 2350 1200
+Connection ~ 2350 1200
+Connection ~ 5350 1200
+Connection ~ 6750 -450
+Wire Wire Line
+	350  -4250 350  -3700
+Wire Wire Line
+	1350 -4250 1350 -3700
+Wire Wire Line
+	2350 -4250 2350 -3700
+Wire Wire Line
+	3350 -4250 3350 -3700
+Wire Wire Line
+	4350 -4250 4350 -3700
+Wire Wire Line
+	5350 -4250 5350 -3700
+Wire Wire Line
+	6350 -4250 6350 -3700
+Wire Wire Line
+	7350 -4250 7350 -3700
+Wire Wire Line
+	8350 -4250 8350 -3700
+Wire Wire Line
+	9350 -4250 9350 -3700
+Connection ~ 350  -2050
+Wire Wire Line
+	350  -2050 1350 -2050
+Connection ~ 1350 -2050
+Wire Wire Line
+	1350 -2050 2350 -2050
+Connection ~ 2350 -2050
+Wire Wire Line
+	2350 -2050 3350 -2050
+Connection ~ 3350 -2050
+Wire Wire Line
+	3350 -2050 4350 -2050
+Connection ~ 4350 -2050
+Wire Wire Line
+	4350 -2050 5350 -2050
+Connection ~ 5350 -2050
+Wire Wire Line
+	5350 -2050 6350 -2050
+Connection ~ 6350 -2050
+Wire Wire Line
+	6350 -2050 7350 -2050
+Connection ~ 7350 -2050
+Wire Wire Line
+	7350 -2050 8350 -2050
+Connection ~ 8350 -2050
+Wire Wire Line
+	8350 -2050 9350 -2050
+Wire Wire Line
+	2350 1200 3350 1200
+Connection ~ 3350 1200
+Wire Wire Line
+	3350 1200 4350 1200
+Wire Wire Line
+	350  -2900 350  -2350
+Wire Wire Line
+	1350 -2900 1350 -2350
+Wire Wire Line
+	2350 -2900 2350 -2350
+Wire Wire Line
+	3350 -2900 3350 -2350
+Wire Wire Line
+	4350 -2900 4350 -2350
+Wire Wire Line
+	5350 -2900 5350 -2350
+Wire Wire Line
+	6350 -2900 6350 -2350
+Wire Wire Line
+	7350 -2900 7350 -2350
+Wire Wire Line
+	8350 -2900 8350 -2350
+Wire Wire Line
+	9350 -2900 9350 -2350
+Wire Wire Line
+	-250 -2900 -250 -450
+Wire Wire Line
+	750  -2900 750  -450
+Wire Wire Line
+	350  50   350  900 
+Wire Wire Line
+	1350 50   1350 900 
+Wire Wire Line
+	2350 50   2350 900 
+Wire Wire Line
+	3350 50   3350 900 
+Connection ~ 4350 1200
+Wire Wire Line
+	4350 1200 5350 1200
+Wire Wire Line
+	5350 1200 6350 1200
+Wire Wire Line
+	4350 50   4350 900 
+Wire Wire Line
+	5350 50   5350 900 
+Connection ~ 6350 1200
+Wire Wire Line
+	6350 50   6350 900 
+Wire Wire Line
+	1750 -2900 1750 -450
+Wire Wire Line
+	2750 -2900 2750 -450
+Wire Wire Line
+	3750 -2900 3750 -450
+Wire Wire Line
+	4750 -2900 4750 -450
+Wire Wire Line
+	5750 -2900 5750 -450
+Wire Wire Line
+	6750 -2900 6750 -450
+Wire Wire Line
+	7750 -2900 7750 -450
+Wire Wire Line
+	8750 -2900 8750 -450
+Wire Wire Line
+	7350 50   7350 900 
+Wire Wire Line
+	9350 50   9350 900 
+Wire Wire Line
+	-750 -3400 350  -3400
+Wire Wire Line
+	350  -3400 1350 -3400
+Wire Wire Line
+	1350 -3400 2350 -3400
+Wire Wire Line
+	2350 -3400 3350 -3400
+Wire Wire Line
+	3350 -3400 4350 -3400
+Wire Wire Line
+	4350 -3400 5350 -3400
+Wire Wire Line
+	5350 -3400 6350 -3400
+Wire Wire Line
+	6350 -3400 7350 -3400
+Wire Wire Line
+	7350 -3400 8350 -3400
+Wire Wire Line
+	8350 -3400 9350 -3400
+Wire Wire Line
+	-250 -4250 -250 -2900
+Connection ~ -250 -4250
+Connection ~ -250 -2900
+Wire Wire Line
+	750  -4250 750  -2900
+Connection ~ 750  -4250
+Connection ~ 750  -2900
+Wire Wire Line
+	1750 -2900 1750 -4250
+Connection ~ 1750 -2900
+Connection ~ 1750 -4250
+Wire Wire Line
+	2750 -4250 2750 -2900
+Connection ~ 2750 -4250
+Connection ~ 2750 -2900
+Wire Wire Line
+	3750 -4250 3750 -2900
+Connection ~ 3750 -4250
+Connection ~ 3750 -2900
+Wire Wire Line
+	4750 -4250 4750 -2900
+Connection ~ 4750 -4250
+Connection ~ 4750 -2900
+Wire Wire Line
+	5750 -4250 5750 -2900
+Connection ~ 5750 -4250
+Connection ~ 5750 -2900
+Wire Wire Line
+	6750 -4250 6750 -2900
+Connection ~ 6750 -4250
+Connection ~ 6750 -2900
+Wire Wire Line
+	7750 -4250 7750 -2900
+Connection ~ 7750 -4250
+Connection ~ 7750 -2900
+Wire Wire Line
+	8750 -4250 8750 -2900
+Connection ~ 8750 -4250
+Connection ~ 8750 -2900
+Wire Wire Line
+	6350 1200 7350 1200
+Connection ~ 7350 1200
+Wire Wire Line
+	7350 1200 9350 1200
+NoConn ~ -4500 -4050
+NoConn ~ -5900 -3950
+Connection ~ 9350 1200
+Connection ~ 9350 -150
+Connection ~ 9350 -2050
+Connection ~ 9350 -3400
+Connection ~ 9350 -4450
+Connection ~ 9350 -4950
+Connection ~ 11750 -2900
+Wire Wire Line
+	11750 -2900 11750 -1000
+Wire Wire Line
+	12350 -1000 12350 -450
+$Comp
+L Device:D D113
+U 1 1 609571D4
+P 12350 -300
+F 0 "D113" V 12304 -221 50  0000 L CNN
+F 1 "D" V 12395 -221 50  0000 L CNN
+F 2 "TestKey:Diode" H 12350 -300 50  0001 C CNN
+F 3 "~" H 12350 -300 50  0001 C CNN
+	1    12350 -300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW113
+U 1 1 609571CE
+P 12050 -1000
+F 0 "SW113" H 12050 -745 50  0000 C CNN
+F 1 "SW_PUSH" H 12050 -836 50  0000 C CNN
+F 2 "TestKey:Mx125H" H 12050 -1000 60  0001 C CNN
+F 3 "" H 12050 -1000 60  0000 C CNN
+	1    12050 -1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW68
+U 1 1 5DA047CC
+P 12050 -4250
+F 0 "SW68" H 12050 -3995 50  0000 C CNN
+F 1 "SW_PUSH" H 12050 -4086 50  0000 C CNN
+F 2 "TestKey:Mx200H" H 12050 -4250 60  0001 C CNN
+F 3 "" H 12050 -4250 60  0000 C CNN
+	1    12050 -4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12350 -3950 12350 -4250
+Connection ~ 12350 -3950
+Wire Wire Line
+	12350 -3700 12350 -3950
+Wire Wire Line
+	11750 -3950 11750 -4250
+Connection ~ 11750 -3950
+Connection ~ 11750 -4250
+Wire Wire Line
+	11750 -2900 11750 -3950
+$Comp
+L keyboard_parts:SW_PUSH SW68_2
+U 1 1 608DF5AB
+P 12050 -3950
+F 0 "SW68_2" H 12050 -3695 50  0000 C CNN
+F 1 "SW_PUSH" H 12050 -3786 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 12050 -3950 60  0001 C CNN
+F 3 "" H 12050 -3950 60  0000 C CNN
+	1    12050 -3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18750 -3700 18750 -2700
+Connection ~ 18750 -3700
+Wire Wire Line
+	18750 -4450 18750 -3700
+Wire Wire Line
+	18750 -2400 18750 -1300
+Connection ~ 18750 -2400
+Wire Wire Line
+	18750 -2700 18750 -2400
+Connection ~ 18750 -2700
+Connection ~ 17750 -450
+Wire Wire Line
+	17750 -450 17750 350 
+$Comp
+L keyboard_parts:SW_PUSH SW110
+U 1 1 5DD78213
+P 18050 350
+F 0 "SW110" H 18050 605 50  0000 C CNN
+F 1 "SW_PUSH" H 18050 514 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 18050 350 60  0001 C CNN
+F 3 "" H 18050 350 60  0000 C CNN
+	1    18050 350 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18350 350  18350 900 
+Wire Wire Line
+	15750 -650 15750 50  
+Connection ~ 15750 -650
+Connection ~ 18350 -3400
+Wire Wire Line
+	19350 -2400 19350 -2350
+Connection ~ 19350 -2400
+Wire Wire Line
+	19350 -2700 19350 -2400
+$Comp
+L keyboard_parts:SW_PUSH SW105_2
+U 1 1 6058A4A9
+P 19050 -2400
+F 0 "SW105_2" H 19050 -2145 50  0000 C CNN
+F 1 "SW_PUSH" H 19050 -2236 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 19050 -2400 60  0001 C CNN
+F 3 "" H 19050 -2400 60  0000 C CNN
+	1    19050 -2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 18750 -4450
+Connection ~ 18750 -4750
+Wire Wire Line
+	18750 -4750 18750 -4450
+Connection ~ 18350 -4450
+Wire Wire Line
+	18350 -4100 18350 -4450
+Wire Wire Line
+	19350 -4450 19350 -4400
+Connection ~ 19350 -4450
+Wire Wire Line
+	19350 -4750 19350 -4450
+$Comp
+L keyboard_parts:SW_PUSH SW104_1
+U 1 1 604907B0
+P 19050 -4450
+F 0 "SW104_1" H 19050 -4195 50  0000 C CNN
+F 1 "SW_PUSH" H 19050 -4286 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 19050 -4450 60  0001 C CNN
+F 3 "" H 19050 -4450 60  0000 C CNN
+	1    19050 -4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18350 -150 19350 -150
+Connection ~ 18350 -150
+Wire Wire Line
+	17750 -3700 17750 -2900
+Wire Wire Line
+	17750 -2900 17750 -450
+Connection ~ 17750 -2900
+Wire Wire Line
+	18350 -2050 19350 -2050
+Connection ~ 18350 -2050
+Wire Wire Line
+	16350 -150 18350 -150
+Wire Wire Line
+	16350 -650 16350 -450
+Connection ~ 16350 -650
+Wire Wire Line
+	16350 -1000 16350 -650
+$Comp
+L keyboard_parts:SW_PUSH SW92_2
+U 1 1 60372AE6
+P 16050 -650
+F 0 "SW92_2" H 16050 -395 50  0000 C CNN
+F 1 "SW_PUSH" H 16050 -486 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 16050 -650 60  0001 C CNN
+F 3 "" H 16050 -650 60  0000 C CNN
+	1    16050 -650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15750 -1000 15750 -650
+Connection ~ 15750 -1000
+Wire Wire Line
+	15750 -2900 15750 -1000
+Wire Wire Line
+	12750 -800 12750 450 
+Connection ~ 12750 -2900
+Connection ~ 12750 -3900
+Wire Wire Line
+	12750 -3900 12750 -2900
+Wire Wire Line
+	19350 -1300 19350 -450
+Wire Wire Line
+	16350 1200 18350 1200
+Connection ~ 16350 1200
+Wire Wire Line
+	16350 900  16350 950 
+Connection ~ 16350 900 
+Connection ~ 15350 1200
+Wire Wire Line
+	15350 1200 16350 1200
+$Comp
+L Device:D D112
+U 1 1 601B7650
+P 19350 -300
+F 0 "D112" V 19304 -221 50  0000 L CNN
+F 1 "D" V 19395 -221 50  0000 L CNN
+F 2 "TestKey:Diode" H 19350 -300 50  0001 C CNN
+F 3 "~" H 19350 -300 50  0001 C CNN
+	1    19350 -300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW112
+U 1 1 601B764A
+P 19050 -1300
+F 0 "SW112" H 19050 -1045 50  0000 C CNN
+F 1 "SW_PUSH" H 19050 -1136 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 19050 -1300 60  0001 C CNN
+F 3 "" H 19050 -1300 60  0000 C CNN
+	1    19050 -1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW111
+U 1 1 5DD78F7F
+P 19050 -3700
+F 0 "SW111" H 19050 -3445 50  0000 C CNN
+F 1 "SW_PUSH" H 19050 -3536 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 19050 -3700 60  0001 C CNN
+F 3 "" H 19050 -3700 60  0000 C CNN
+	1    19050 -3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D111
+U 1 1 5DD78F85
+P 19350 -3550
+F 0 "D111" V 19304 -3471 50  0000 L CNN
+F 1 "D" V 19395 -3471 50  0000 L CNN
+F 2 "TestKey:Diode" H 19350 -3550 50  0001 C CNN
+F 3 "~" H 19350 -3550 50  0001 C CNN
+	1    19350 -3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	18750 -5250 18750 -4750
+Connection ~ 18750 -5250
+Wire Wire Line
+	18750 -5750 18750 -5250
+Wire Wire Line
+	17750 -4750 17750 -3700
+Connection ~ 17750 -3700
+Wire Wire Line
+	18350 -3400 19350 -3400
+$Comp
+L Device:D D100
+U 1 1 5DB71454
+P 18350 -3550
+F 0 "D100" V 18304 -3471 50  0000 L CNN
+F 1 "D" V 18395 -3471 50  0000 L CNN
+F 2 "TestKey:Diode" H 18350 -3550 50  0001 C CNN
+F 3 "~" H 18350 -3550 50  0001 C CNN
+	1    18350 -3550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 17750 -4750
+Wire Wire Line
+	17350 -3400 18350 -3400
+Wire Wire Line
+	18350 -4100 19350 -4100
+Wire Wire Line
+	17350 -4450 18350 -4450
+Wire Wire Line
+	17750 -5250 17750 -4750
+Wire Wire Line
+	18350 -4950 19350 -4950
+Connection ~ 18350 -4950
+Connection ~ 17750 -5250
+Wire Wire Line
+	17350 -4950 18350 -4950
+Wire Wire Line
+	17750 -5750 17750 -5250
+Wire Wire Line
+	16750 -4750 16750 -3700
+Wire Wire Line
+	16750 -3700 16750 -2900
+Connection ~ 16750 -3700
+Connection ~ 17350 -3400
+$Comp
+L Device:D D96
+U 1 1 5DB6D6CA
+P 17350 -3550
+F 0 "D96" V 17304 -3471 50  0000 L CNN
+F 1 "D" V 17395 -3471 50  0000 L CNN
+F 2 "TestKey:Diode" H 17350 -3550 50  0001 C CNN
+F 3 "~" H 17350 -3550 50  0001 C CNN
+	1    17350 -3550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 16350 -2050
+$Comp
+L keyboard_parts:SW_PUSH SW96
+U 1 1 5DB6D6D0
+P 17050 -3700
+F 0 "SW96" H 17050 -3445 50  0000 C CNN
+F 1 "SW_PUSH" H 17050 -3536 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 17050 -3700 60  0001 C CNN
+F 3 "" H 17050 -3700 60  0000 C CNN
+	1    17050 -3700
+	1    0    0    -1  
+$EndComp
+Connection ~ 17350 -4450
+Connection ~ 16750 -4750
+Wire Wire Line
+	16350 -3400 17350 -3400
+Wire Wire Line
+	16750 -5250 16750 -4750
+Wire Wire Line
+	16350 -4450 17350 -4450
+Connection ~ 17350 -4950
+Connection ~ 16750 -5250
+Wire Wire Line
+	16350 50   16350 900 
+Connection ~ 16350 -150
+Connection ~ 16350 -3400
+Connection ~ 16350 -4450
+Connection ~ 16350 -4950
+Wire Wire Line
+	16350 -4950 17350 -4950
+Wire Wire Line
+	16750 -5750 16750 -5250
+Connection ~ 15750 -2900
+Wire Wire Line
+	16350 -4250 16350 -3700
+Connection ~ 14750 -2900
+Wire Wire Line
+	14750 -2900 14750 -450
+Connection ~ 15350 -150
+Connection ~ 15350 -2050
+Connection ~ 15350 -3400
+Connection ~ 15350 -4450
+Connection ~ 15350 -4950
+Wire Wire Line
+	15350 50   15350 900 
+Wire Wire Line
+	15350 -4250 15350 -3700
+Connection ~ 13350 1200
+Connection ~ 13350 -2050
+Connection ~ 13350 -3400
+Connection ~ 13350 -4450
+Connection ~ 13350 -4950
+Connection ~ 15750 -4250
+Wire Wire Line
+	15750 -2900 15750 -4250
+Connection ~ 14750 -4250
+Wire Wire Line
+	14750 -2900 14750 -4250
+Connection ~ 13750 -2900
+Connection ~ 13750 -4250
+Wire Wire Line
+	13750 -4250 13750 -2900
+Wire Wire Line
+	15350 -3400 16350 -3400
+Wire Wire Line
+	14350 -3400 15350 -3400
+Wire Wire Line
+	13350 -3400 14350 -3400
+Connection ~ 10750 -4250
+Wire Wire Line
+	10750 -4250 10750 -2900
+Connection ~ 9750 -2900
+Connection ~ 9750 -4250
+Wire Wire Line
+	9750 -4250 9750 -2900
+Wire Wire Line
+	12350 -3400 13350 -3400
+Wire Wire Line
+	11350 -3400 12350 -3400
+Wire Wire Line
+	10350 -3400 11350 -3400
+Wire Wire Line
+	9350 -3400 10350 -3400
+Wire Wire Line
+	13750 -2900 13750 -450
+Wire Wire Line
+	14350 50   14350 900 
+Wire Wire Line
+	10350 50   10350 900 
+Wire Wire Line
+	9750 -2900 9750 -450
+Wire Wire Line
+	18350 -2900 18350 -2350
+Wire Wire Line
+	16350 -2900 16350 -2350
+Wire Wire Line
+	15350 -2900 15350 -2350
+Wire Wire Line
+	14350 -2900 14350 -2350
+Wire Wire Line
+	12350 -2900 12350 -2350
+Wire Wire Line
+	11350 -2900 11350 -2350
+Wire Wire Line
+	10350 -2900 10350 -2350
+Wire Wire Line
+	15350 -2050 16350 -2050
+Wire Wire Line
+	14350 -2050 15350 -2050
+Connection ~ 14350 -2050
+Wire Wire Line
+	12350 -2050 13350 -2050
+Connection ~ 12350 -2050
+Wire Wire Line
+	11350 -2050 12350 -2050
+Connection ~ 11350 -2050
+Wire Wire Line
+	10350 -2050 11350 -2050
+Connection ~ 10350 -2050
+Wire Wire Line
+	9350 -2050 10350 -2050
+Wire Wire Line
+	14350 -4250 14350 -3700
+Wire Wire Line
+	11350 -4250 11350 -3700
+Wire Wire Line
+	10350 -4250 10350 -3700
+Wire Wire Line
+	13350 800  13350 900 
+Connection ~ 13350 800 
+Wire Wire Line
+	13350 450  13350 800 
+Wire Wire Line
+	12750 450  12750 800 
+Connection ~ 12750 450 
+$Comp
+L keyboard_parts:SW_PUSH SW75_3
+U 1 1 5F4C6833
+P 13050 800
+F 0 "SW75_3" H 13050 1055 50  0000 C CNN
+F 1 "SW_PUSH" H 13050 964 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 13050 800 60  0001 C CNN
+F 3 "" H 13050 800 60  0000 C CNN
+	1    13050 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW75_2
+U 1 1 5F4B8892
+P 13050 450
+F 0 "SW75_2" H 13050 705 50  0000 C CNN
+F 1 "SW_PUSH" H 13050 614 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 13050 450 60  0001 C CNN
+F 3 "" H 13050 450 60  0000 C CNN
+	1    13050 450 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13350 -800 13350 -450
+Connection ~ 13350 -800
+Wire Wire Line
+	13350 -1200 13350 -800
+Connection ~ 13350 -1200
+Wire Wire Line
+	13350 -1550 13350 -1200
+Wire Wire Line
+	12750 -1200 12750 -800
+Connection ~ 12750 -1200
+Wire Wire Line
+	12750 -1550 12750 -1200
+Connection ~ 12750 -1550
+Connection ~ 12750 -2550
+Wire Wire Line
+	12750 -2550 12750 -1550
+Connection ~ 12750 -800
+$Comp
+L keyboard_parts:SW_PUSH SW74_3
+U 1 1 5F46776C
+P 13050 -800
+F 0 "SW74_3" H 13050 -545 50  0000 C CNN
+F 1 "SW_PUSH" H 13050 -636 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 13050 -800 60  0001 C CNN
+F 3 "" H 13050 -800 60  0000 C CNN
+	1    13050 -800
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW74_2
+U 1 1 5F45A1F9
+P 13050 -1200
+F 0 "SW74_2" H 13050 -945 50  0000 C CNN
+F 1 "SW_PUSH" H 13050 -1036 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 13050 -1200 60  0001 C CNN
+F 3 "" H 13050 -1200 60  0000 C CNN
+	1    13050 -1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14350 1200 15350 1200
+Connection ~ 14350 1200
+Wire Wire Line
+	13350 1200 14350 1200
+Wire Wire Line
+	10350 1200 13350 1200
+Connection ~ 10350 1200
+Wire Wire Line
+	9350 1200 10350 1200
+Wire Wire Line
+	16350 -150 15350 -150
+Wire Wire Line
+	15350 -150 14350 -150
+Wire Wire Line
+	14350 -150 13350 -150
+Connection ~ 14350 -150
+Wire Wire Line
+	10350 -150 9350 -150
+Wire Wire Line
+	14750 -450 14750 50  
+Connection ~ 14750 -450
+Connection ~ 13750 -450
+Wire Wire Line
+	13750 50   13750 -450
+Wire Wire Line
+	9750 -450 9750 50  
+Connection ~ 9750 -450
+$Comp
+L Device:D D75
+U 1 1 5DB55140
+P 13350 1050
+F 0 "D75" V 13304 1129 50  0000 L CNN
+F 1 "D" V 13395 1129 50  0000 L CNN
+F 2 "TestKey:Diode" H 13350 1050 50  0001 C CNN
+F 3 "~" H 13350 1050 50  0001 C CNN
+	1    13350 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D74
+U 1 1 5DB5514C
+P 13350 -300
+F 0 "D74" V 13304 -221 50  0000 L CNN
+F 1 "D" V 13395 -221 50  0000 L CNN
+F 2 "TestKey:Diode" H 13350 -300 50  0001 C CNN
+F 3 "~" H 13350 -300 50  0001 C CNN
+	1    13350 -300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW74
+U 1 1 5DB55152
+P 13050 -1550
+F 0 "SW74" H 13050 -1295 50  0000 C CNN
+F 1 "SW_PUSH" H 13050 -1386 50  0000 C CNN
+F 2 "TestKey:Mx275H" H 13050 -1550 60  0001 C CNN
+F 3 "" H 13050 -1550 60  0000 C CNN
+	1    13050 -1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D81
+U 1 1 5DB5F0C2
+P 14350 1050
+F 0 "D81" V 14304 1129 50  0000 L CNN
+F 1 "D" V 14395 1129 50  0000 L CNN
+F 2 "TestKey:Diode" H 14350 1050 50  0001 C CNN
+F 3 "~" H 14350 1050 50  0001 C CNN
+	1    14350 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW81
+U 1 1 5DB5F0C8
+P 14050 50
+F 0 "SW81" H 14050 305 50  0000 C CNN
+F 1 "SW_PUSH" H 14050 214 50  0000 C CNN
+F 2 "TestKey:Mx125H" H 14050 50  60  0001 C CNN
+F 3 "" H 14050 50  60  0000 C CNN
+	1    14050 50  
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D80
+U 1 1 5DB5F0CE
+P 14350 -300
+F 0 "D80" V 14304 -221 50  0000 L CNN
+F 1 "D" V 14395 -221 50  0000 L CNN
+F 2 "TestKey:Diode" H 14350 -300 50  0001 C CNN
+F 3 "~" H 14350 -300 50  0001 C CNN
+	1    14350 -300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW80
+U 1 1 5DB5F0D4
+P 14050 -450
+F 0 "SW80" H 14050 -195 50  0000 C CNN
+F 1 "SW_PUSH" H 14050 -286 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 14050 -450 60  0001 C CNN
+F 3 "" H 14050 -450 60  0000 C CNN
+	1    14050 -450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D86
+U 1 1 5DB65144
+P 15350 -300
+F 0 "D86" V 15304 -221 50  0000 L CNN
+F 1 "D" V 15395 -221 50  0000 L CNN
+F 2 "TestKey:Diode" H 15350 -300 50  0001 C CNN
+F 3 "~" H 15350 -300 50  0001 C CNN
+	1    15350 -300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW86
+U 1 1 5DB6514A
+P 15050 -450
+F 0 "SW86" H 15050 -195 50  0000 C CNN
+F 1 "SW_PUSH" H 15050 -286 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 15050 -450 60  0001 C CNN
+F 3 "" H 15050 -450 60  0000 C CNN
+	1    15050 -450
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW87
+U 1 1 5DB65180
+P 15050 50
+F 0 "SW87" H 15050 305 50  0000 C CNN
+F 1 "SW_PUSH" H 15050 214 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 15050 50  60  0001 C CNN
+F 3 "" H 15050 50  60  0000 C CNN
+	1    15050 50  
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D87
+U 1 1 5DB65186
+P 15350 1050
+F 0 "D87" V 15304 1129 50  0000 L CNN
+F 1 "D" V 15395 1129 50  0000 L CNN
+F 2 "TestKey:Diode" H 15350 1050 50  0001 C CNN
+F 3 "~" H 15350 1050 50  0001 C CNN
+	1    15350 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D92
+U 1 1 5DB6A0FA
+P 16350 -300
+F 0 "D92" V 16304 -221 50  0000 L CNN
+F 1 "D" V 16395 -221 50  0000 L CNN
+F 2 "TestKey:Diode" H 16350 -300 50  0001 C CNN
+F 3 "~" H 16350 -300 50  0001 C CNN
+	1    16350 -300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW92
+U 1 1 5DB6A100
+P 16050 -1000
+F 0 "SW92" H 16050 -745 50  0000 C CNN
+F 1 "SW_PUSH" H 16050 -836 50  0000 C CNN
+F 2 "TestKey:Mx200H" H 16050 -1000 60  0001 C CNN
+F 3 "" H 16050 -1000 60  0000 C CNN
+	1    16050 -1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D101
+U 1 1 5DB71448
+P 18350 -2200
+F 0 "D101" V 18304 -2121 50  0000 L CNN
+F 1 "D" V 18395 -2121 50  0000 L CNN
+F 2 "TestKey:Diode" H 18350 -2200 50  0001 C CNN
+F 3 "~" H 18350 -2200 50  0001 C CNN
+	1    18350 -2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW101
+U 1 1 5DB7144E
+P 18050 -2900
+F 0 "SW101" H 18050 -2645 50  0000 C CNN
+F 1 "SW_PUSH" H 18050 -2736 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 18050 -2900 60  0001 C CNN
+F 3 "" H 18050 -2900 60  0000 C CNN
+	1    18050 -2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW105
+U 1 1 5DB75344
+P 19050 -2700
+F 0 "SW105" H 19050 -2445 50  0000 C CNN
+F 1 "SW_PUSH" H 19050 -2536 50  0000 C CNN
+F 2 "TestKey:Mx200V" H 19050 -2700 60  0001 C CNN
+F 3 "" H 19050 -2700 60  0000 C CNN
+	1    19050 -2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D105
+U 1 1 5DB7533E
+P 19350 -2200
+F 0 "D105" V 19304 -2121 50  0000 L CNN
+F 1 "D" V 19395 -2121 50  0000 L CNN
+F 2 "TestKey:Diode" H 19350 -2200 50  0001 C CNN
+F 3 "~" H 19350 -2200 50  0001 C CNN
+	1    19350 -2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D61
+U 1 1 5D9F3AFB
+P 10350 1050
+F 0 "D61" V 10304 1129 50  0000 L CNN
+F 1 "D" V 10395 1129 50  0000 L CNN
+F 2 "TestKey:Diode" H 10350 1050 50  0001 C CNN
+F 3 "~" H 10350 1050 50  0001 C CNN
+	1    10350 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW61
+U 1 1 5D9F3AF5
+P 10050 50
+F 0 "SW61" H 10050 305 50  0000 C CNN
+F 1 "SW_PUSH" H 10050 214 50  0000 C CNN
+F 2 "TestKey:Mx125H" H 10050 50  60  0001 C CNN
+F 3 "" H 10050 50  60  0000 C CNN
+	1    10050 50  
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW60
+U 1 1 5D9F3ABF
+P 10050 -450
+F 0 "SW60" H 10050 -195 50  0000 C CNN
+F 1 "SW_PUSH" H 10050 -286 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 10050 -450 60  0001 C CNN
+F 3 "" H 10050 -450 60  0000 C CNN
+	1    10050 -450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D60
+U 1 1 5D9F3AB9
+P 10350 -300
+F 0 "D60" V 10304 -221 50  0000 L CNN
+F 1 "D" V 10395 -221 50  0000 L CNN
+F 2 "TestKey:Diode" H 10350 -300 50  0001 C CNN
+F 3 "~" H 10350 -300 50  0001 C CNN
+	1    10350 -300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12750 -2900 12750 -2550
+Wire Wire Line
+	13350 -2550 13350 -2350
+Connection ~ 13350 -2550
+Wire Wire Line
+	13350 -2900 13350 -2550
+$Comp
+L keyboard_parts:SW_PUSH SW73_2
+U 1 1 5F2649E3
+P 13050 -2550
+F 0 "SW73_2" H 13050 -2295 50  0000 C CNN
+F 1 "SW_PUSH" H 13050 -2386 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 13050 -2550 60  0001 C CNN
+F 3 "" H 13050 -2550 60  0000 C CNN
+	1    13050 -2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13350 -2050 14350 -2050
+Connection ~ 12750 -4250
+Wire Wire Line
+	12750 -4250 12750 -3900
+Wire Wire Line
+	13350 -3900 13350 -3700
+Connection ~ 13350 -3900
+Wire Wire Line
+	13350 -4250 13350 -3900
+$Comp
+L keyboard_parts:SW_PUSH SW72_2
+U 1 1 5F1DC214
+P 13050 -3900
+F 0 "SW72_2" H 13050 -3645 50  0000 C CNN
+F 1 "SW_PUSH" H 13050 -3736 50  0000 C CNN
+F 2 "TestKey:Mx200V" H 13050 -3900 60  0001 C CNN
+F 3 "" H 13050 -3900 60  0000 C CNN
+	1    13050 -3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12350 -4950 13350 -4950
+Connection ~ 12350 -4950
+Wire Wire Line
+	11350 -4950 12350 -4950
+Connection ~ 14350 -3400
+Connection ~ 12350 -3400
+Connection ~ 11350 -3400
+Connection ~ 10350 -3400
+Wire Wire Line
+	15350 -4450 16350 -4450
+Wire Wire Line
+	14350 -4450 15350 -4450
+Connection ~ 14350 -4450
+Wire Wire Line
+	13350 -4450 14350 -4450
+Wire Wire Line
+	12350 -4450 13350 -4450
+Connection ~ 12350 -4450
+Wire Wire Line
+	11350 -4450 12350 -4450
+Connection ~ 11350 -4450
+Wire Wire Line
+	10350 -4450 11350 -4450
+Connection ~ 10350 -4450
+Wire Wire Line
+	9350 -4450 10350 -4450
+Wire Wire Line
+	16350 -4950 15350 -4950
+Wire Wire Line
+	15350 -4950 14350 -4950
+Wire Wire Line
+	14350 -4950 13350 -4950
+Connection ~ 14350 -4950
+Wire Wire Line
+	11350 -4950 10350 -4950
+Connection ~ 11350 -4950
+Wire Wire Line
+	10350 -4950 9350 -4950
+Connection ~ 10350 -4950
+Wire Wire Line
+	15750 -4250 15750 -4750
+Wire Wire Line
+	15750 -4750 15750 -5250
+Connection ~ 15750 -4750
+Wire Wire Line
+	15750 -5250 15750 -5750
+Connection ~ 15750 -5250
+Wire Wire Line
+	14750 -4750 14750 -4250
+Connection ~ 14750 -4750
+Wire Wire Line
+	14750 -5250 14750 -4750
+Connection ~ 14750 -5250
+Wire Wire Line
+	14750 -5750 14750 -5250
+Wire Wire Line
+	13750 -4250 13750 -4750
+Wire Wire Line
+	13750 -4750 13750 -5250
+Connection ~ 13750 -4750
+Wire Wire Line
+	13750 -5250 13750 -5750
+Connection ~ 13750 -5250
+Wire Wire Line
+	12750 -4250 12750 -4750
+Wire Wire Line
+	12750 -4750 12750 -5250
+Connection ~ 12750 -4750
+Wire Wire Line
+	12750 -5250 12750 -5750
+Connection ~ 12750 -5250
+Wire Wire Line
+	11750 -4750 11750 -4250
+Connection ~ 11750 -4750
+Wire Wire Line
+	11750 -5250 11750 -4750
+Connection ~ 11750 -5250
+Wire Wire Line
+	11750 -5750 11750 -5250
+Wire Wire Line
+	10750 -4250 10750 -4750
+Wire Wire Line
+	10750 -4750 10750 -5250
+Connection ~ 10750 -4750
+Wire Wire Line
+	10750 -5250 10750 -5750
+Connection ~ 10750 -5250
+Wire Wire Line
+	9750 -4750 9750 -4250
+Connection ~ 9750 -4750
+Wire Wire Line
+	9750 -5250 9750 -4750
+Connection ~ 9750 -5250
+Wire Wire Line
+	9750 -5750 9750 -5250
+$Comp
+L Device:D D110
+U 1 1 5DD78219
+P 18350 1050
+F 0 "D110" V 18304 1129 50  0000 L CNN
+F 1 "D" V 18395 1129 50  0000 L CNN
+F 2 "TestKey:Diode" H 18350 1050 50  0001 C CNN
+F 3 "~" H 18350 1050 50  0001 C CNN
+	1    18350 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D66
+U 1 1 5D9FA208
+P 12350 -5100
+F 0 "D66" V 12304 -5021 50  0000 L CNN
+F 1 "D" V 12395 -5021 50  0000 L CNN
+F 2 "TestKey:Diode" H 12350 -5100 50  0001 C CNN
+F 3 "~" H 12350 -5100 50  0001 C CNN
+	1    12350 -5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW66
+U 1 1 5D9FA20E
+P 12050 -5250
+F 0 "SW66" H 12050 -4995 50  0000 C CNN
+F 1 "SW_PUSH" H 12050 -5086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 12050 -5250 60  0001 C CNN
+F 3 "" H 12050 -5250 60  0000 C CNN
+	1    12050 -5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW67
+U 1 1 5D9FA244
+P 12050 -4750
+F 0 "SW67" H 12050 -4495 50  0000 C CNN
+F 1 "SW_PUSH" H 12050 -4586 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 12050 -4750 60  0001 C CNN
+F 3 "" H 12050 -4750 60  0000 C CNN
+	1    12050 -4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D67
+U 1 1 5D9FA24A
+P 12350 -4600
+F 0 "D67" V 12304 -4521 50  0000 L CNN
+F 1 "D" V 12395 -4521 50  0000 L CNN
+F 2 "TestKey:Diode" H 12350 -4600 50  0001 C CNN
+F 3 "~" H 12350 -4600 50  0001 C CNN
+	1    12350 -4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D72
+U 1 1 5DA04796
+P 13350 -3550
+F 0 "D72" V 13304 -3471 50  0000 L CNN
+F 1 "D" V 13395 -3471 50  0000 L CNN
+F 2 "TestKey:Diode" H 13350 -3550 50  0001 C CNN
+F 3 "~" H 13350 -3550 50  0001 C CNN
+	1    13350 -3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW72
+U 1 1 5DA0479C
+P 13050 -4250
+F 0 "SW72" H 13050 -3995 50  0000 C CNN
+F 1 "SW_PUSH" H 13050 -4086 50  0000 C CNN
+F 2 "TestKey:Mx150H" H 13050 -4250 60  0001 C CNN
+F 3 "" H 13050 -4250 60  0000 C CNN
+	1    13050 -4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D71
+U 1 1 5DA047A2
+P 13350 -4600
+F 0 "D71" V 13304 -4521 50  0000 L CNN
+F 1 "D" V 13395 -4521 50  0000 L CNN
+F 2 "TestKey:Diode" H 13350 -4600 50  0001 C CNN
+F 3 "~" H 13350 -4600 50  0001 C CNN
+	1    13350 -4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW71
+U 1 1 5DA047A8
+P 13050 -4750
+F 0 "SW71" H 13050 -4495 50  0000 C CNN
+F 1 "SW_PUSH" H 13050 -4586 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 13050 -4750 60  0001 C CNN
+F 3 "" H 13050 -4750 60  0000 C CNN
+	1    13050 -4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D70
+U 1 1 5DA047AE
+P 13350 -5100
+F 0 "D70" V 13304 -5021 50  0000 L CNN
+F 1 "D" V 13395 -5021 50  0000 L CNN
+F 2 "TestKey:Diode" H 13350 -5100 50  0001 C CNN
+F 3 "~" H 13350 -5100 50  0001 C CNN
+	1    13350 -5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW70
+U 1 1 5DA047B4
+P 13050 -5250
+F 0 "SW70" H 13050 -4995 50  0000 C CNN
+F 1 "SW_PUSH" H 13050 -5086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 13050 -5250 60  0001 C CNN
+F 3 "" H 13050 -5250 60  0000 C CNN
+	1    13050 -5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D69
+U 1 1 5DA047BA
+P 12350 -2200
+F 0 "D69" V 12304 -2121 50  0000 L CNN
+F 1 "D" V 12395 -2121 50  0000 L CNN
+F 2 "TestKey:Diode" H 12350 -2200 50  0001 C CNN
+F 3 "~" H 12350 -2200 50  0001 C CNN
+	1    12350 -2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW69
+U 1 1 5DA047C0
+P 12050 -2900
+F 0 "SW69" H 12050 -2645 50  0000 C CNN
+F 1 "SW_PUSH" H 12050 -2736 50  0000 C CNN
+F 2 "TestKey:Mx125H" H 12050 -2900 60  0001 C CNN
+F 3 "" H 12050 -2900 60  0000 C CNN
+	1    12050 -2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D68
+U 1 1 5DA047C6
+P 12350 -3550
+F 0 "D68" V 12304 -3471 50  0000 L CNN
+F 1 "D" V 12395 -3471 50  0000 L CNN
+F 2 "TestKey:Diode" H 12350 -3550 50  0001 C CNN
+F 3 "~" H 12350 -3550 50  0001 C CNN
+	1    12350 -3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW73
+U 1 1 5DA047D2
+P 13050 -2900
+F 0 "SW73" H 13050 -2645 50  0000 C CNN
+F 1 "SW_PUSH" H 13050 -2736 50  0000 C CNN
+F 2 "TestKey:Mx225H" H 13050 -2900 60  0001 C CNN
+F 3 "" H 13050 -2900 60  0000 C CNN
+	1    13050 -2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D73
+U 1 1 5DA047D8
+P 13350 -2200
+F 0 "D73" V 13304 -2121 50  0000 L CNN
+F 1 "D" V 13395 -2121 50  0000 L CNN
+F 2 "TestKey:Diode" H 13350 -2200 50  0001 C CNN
+F 3 "~" H 13350 -2200 50  0001 C CNN
+	1    13350 -2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D78
+U 1 1 5DB5511C
+P 14350 -3550
+F 0 "D78" V 14304 -3471 50  0000 L CNN
+F 1 "D" V 14395 -3471 50  0000 L CNN
+F 2 "TestKey:Diode" H 14350 -3550 50  0001 C CNN
+F 3 "~" H 14350 -3550 50  0001 C CNN
+	1    14350 -3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW78
+U 1 1 5DB55122
+P 14050 -4250
+F 0 "SW78" H 14050 -3995 50  0000 C CNN
+F 1 "SW_PUSH" H 14050 -4086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 14050 -4250 60  0001 C CNN
+F 3 "" H 14050 -4250 60  0000 C CNN
+	1    14050 -4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D77
+U 1 1 5DB55128
+P 14350 -4600
+F 0 "D77" V 14304 -4521 50  0000 L CNN
+F 1 "D" V 14395 -4521 50  0000 L CNN
+F 2 "TestKey:Diode" H 14350 -4600 50  0001 C CNN
+F 3 "~" H 14350 -4600 50  0001 C CNN
+	1    14350 -4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW77
+U 1 1 5DB5512E
+P 14050 -4750
+F 0 "SW77" H 14050 -4495 50  0000 C CNN
+F 1 "SW_PUSH" H 14050 -4586 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 14050 -4750 60  0001 C CNN
+F 3 "" H 14050 -4750 60  0000 C CNN
+	1    14050 -4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D76
+U 1 1 5DB55134
+P 14350 -5100
+F 0 "D76" V 14304 -5021 50  0000 L CNN
+F 1 "D" V 14395 -5021 50  0000 L CNN
+F 2 "TestKey:Diode" H 14350 -5100 50  0001 C CNN
+F 3 "~" H 14350 -5100 50  0001 C CNN
+	1    14350 -5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW76
+U 1 1 5DB5513A
+P 14050 -5250
+F 0 "SW76" H 14050 -4995 50  0000 C CNN
+F 1 "SW_PUSH" H 14050 -5086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 14050 -5250 60  0001 C CNN
+F 3 "" H 14050 -5250 60  0000 C CNN
+	1    14050 -5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW79
+U 1 1 5DB55158
+P 14050 -2900
+F 0 "SW79" H 14050 -2645 50  0000 C CNN
+F 1 "SW_PUSH" H 14050 -2736 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 14050 -2900 60  0001 C CNN
+F 3 "" H 14050 -2900 60  0000 C CNN
+	1    14050 -2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D79
+U 1 1 5DB5515E
+P 14350 -2200
+F 0 "D79" V 14304 -2121 50  0000 L CNN
+F 1 "D" V 14395 -2121 50  0000 L CNN
+F 2 "TestKey:Diode" H 14350 -2200 50  0001 C CNN
+F 3 "~" H 14350 -2200 50  0001 C CNN
+	1    14350 -2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D85
+U 1 1 5DB65150
+P 15350 -2200
+F 0 "D85" V 15304 -2121 50  0000 L CNN
+F 1 "D" V 15395 -2121 50  0000 L CNN
+F 2 "TestKey:Diode" H 15350 -2200 50  0001 C CNN
+F 3 "~" H 15350 -2200 50  0001 C CNN
+	1    15350 -2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW85
+U 1 1 5DB65156
+P 15050 -2900
+F 0 "SW85" H 15050 -2645 50  0000 C CNN
+F 1 "SW_PUSH" H 15050 -2736 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 15050 -2900 60  0001 C CNN
+F 3 "" H 15050 -2900 60  0000 C CNN
+	1    15050 -2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D84
+U 1 1 5DB6515C
+P 15350 -3550
+F 0 "D84" V 15304 -3471 50  0000 L CNN
+F 1 "D" V 15395 -3471 50  0000 L CNN
+F 2 "TestKey:Diode" H 15350 -3550 50  0001 C CNN
+F 3 "~" H 15350 -3550 50  0001 C CNN
+	1    15350 -3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW84
+U 1 1 5DB65162
+P 15050 -4250
+F 0 "SW84" H 15050 -3995 50  0000 C CNN
+F 1 "SW_PUSH" H 15050 -4086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 15050 -4250 60  0001 C CNN
+F 3 "" H 15050 -4250 60  0000 C CNN
+	1    15050 -4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D83
+U 1 1 5DB65168
+P 15350 -4600
+F 0 "D83" V 15304 -4521 50  0000 L CNN
+F 1 "D" V 15395 -4521 50  0000 L CNN
+F 2 "TestKey:Diode" H 15350 -4600 50  0001 C CNN
+F 3 "~" H 15350 -4600 50  0001 C CNN
+	1    15350 -4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW83
+U 1 1 5DB6516E
+P 15050 -4750
+F 0 "SW83" H 15050 -4495 50  0000 C CNN
+F 1 "SW_PUSH" H 15050 -4586 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 15050 -4750 60  0001 C CNN
+F 3 "" H 15050 -4750 60  0000 C CNN
+	1    15050 -4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D82
+U 1 1 5DB65174
+P 15350 -5100
+F 0 "D82" V 15304 -5021 50  0000 L CNN
+F 1 "D" V 15395 -5021 50  0000 L CNN
+F 2 "TestKey:Diode" H 15350 -5100 50  0001 C CNN
+F 3 "~" H 15350 -5100 50  0001 C CNN
+	1    15350 -5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW82
+U 1 1 5DB6517A
+P 15050 -5250
+F 0 "SW82" H 15050 -4995 50  0000 C CNN
+F 1 "SW_PUSH" H 15050 -5086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 15050 -5250 60  0001 C CNN
+F 3 "" H 15050 -5250 60  0000 C CNN
+	1    15050 -5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D91
+U 1 1 5DB6A106
+P 16350 -2200
+F 0 "D91" V 16304 -2121 50  0000 L CNN
+F 1 "D" V 16395 -2121 50  0000 L CNN
+F 2 "TestKey:Diode" H 16350 -2200 50  0001 C CNN
+F 3 "~" H 16350 -2200 50  0001 C CNN
+	1    16350 -2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW91
+U 1 1 5DB6A10C
+P 16050 -2900
+F 0 "SW91" H 16050 -2645 50  0000 C CNN
+F 1 "SW_PUSH" H 16050 -2736 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 16050 -2900 60  0001 C CNN
+F 3 "" H 16050 -2900 60  0000 C CNN
+	1    16050 -2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D90
+U 1 1 5DB6A112
+P 16350 -3550
+F 0 "D90" V 16304 -3471 50  0000 L CNN
+F 1 "D" V 16395 -3471 50  0000 L CNN
+F 2 "TestKey:Diode" H 16350 -3550 50  0001 C CNN
+F 3 "~" H 16350 -3550 50  0001 C CNN
+	1    16350 -3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW90
+U 1 1 5DB6A118
+P 16050 -4250
+F 0 "SW90" H 16050 -3995 50  0000 C CNN
+F 1 "SW_PUSH" H 16050 -4086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 16050 -4250 60  0001 C CNN
+F 3 "" H 16050 -4250 60  0000 C CNN
+	1    16050 -4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D89
+U 1 1 5DB6A11E
+P 16350 -4600
+F 0 "D89" V 16304 -4521 50  0000 L CNN
+F 1 "D" V 16395 -4521 50  0000 L CNN
+F 2 "TestKey:Diode" H 16350 -4600 50  0001 C CNN
+F 3 "~" H 16350 -4600 50  0001 C CNN
+	1    16350 -4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW89
+U 1 1 5DB6A124
+P 16050 -4750
+F 0 "SW89" H 16050 -4495 50  0000 C CNN
+F 1 "SW_PUSH" H 16050 -4586 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 16050 -4750 60  0001 C CNN
+F 3 "" H 16050 -4750 60  0000 C CNN
+	1    16050 -4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D88
+U 1 1 5DB6A12A
+P 16350 -5100
+F 0 "D88" V 16304 -5021 50  0000 L CNN
+F 1 "D" V 16395 -5021 50  0000 L CNN
+F 2 "TestKey:Diode" H 16350 -5100 50  0001 C CNN
+F 3 "~" H 16350 -5100 50  0001 C CNN
+	1    16350 -5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW88
+U 1 1 5DB6A130
+P 16050 -5250
+F 0 "SW88" H 16050 -4995 50  0000 C CNN
+F 1 "SW_PUSH" H 16050 -5086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 16050 -5250 60  0001 C CNN
+F 3 "" H 16050 -5250 60  0000 C CNN
+	1    16050 -5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW93
+U 1 1 5DB6A136
+P 16050 50
+F 0 "SW93" H 16050 305 50  0000 C CNN
+F 1 "SW_PUSH" H 16050 214 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 16050 50  60  0001 C CNN
+F 3 "" H 16050 50  60  0000 C CNN
+	1    16050 50  
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D93
+U 1 1 5DB6A13C
+P 16350 1050
+F 0 "D93" V 16304 1129 50  0000 L CNN
+F 1 "D" V 16395 1129 50  0000 L CNN
+F 2 "TestKey:Diode" H 16350 1050 50  0001 C CNN
+F 3 "~" H 16350 1050 50  0001 C CNN
+	1    16350 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D98
+U 1 1 5DB6D6B2
+P 18350 -5100
+F 0 "D98" V 18304 -5021 50  0000 L CNN
+F 1 "D" V 18395 -5021 50  0000 L CNN
+F 2 "TestKey:Diode" H 18350 -5100 50  0001 C CNN
+F 3 "~" H 18350 -5100 50  0001 C CNN
+	1    18350 -5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW98
+U 1 1 5DB6D6B8
+P 18050 -5250
+F 0 "SW98" H 18050 -4995 50  0000 C CNN
+F 1 "SW_PUSH" H 18050 -5086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 18050 -5250 60  0001 C CNN
+F 3 "" H 18050 -5250 60  0000 C CNN
+	1    18050 -5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW97
+U 1 1 5DB6D6C4
+P 17050 -2900
+F 0 "SW97" H 17050 -2645 50  0000 C CNN
+F 1 "SW_PUSH" H 17050 -2736 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 17050 -2900 60  0001 C CNN
+F 3 "" H 17050 -2900 60  0000 C CNN
+	1    17050 -2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D95
+U 1 1 5DB6D6D6
+P 17350 -4600
+F 0 "D95" V 17304 -4521 50  0000 L CNN
+F 1 "D" V 17395 -4521 50  0000 L CNN
+F 2 "TestKey:Diode" H 17350 -4600 50  0001 C CNN
+F 3 "~" H 17350 -4600 50  0001 C CNN
+	1    17350 -4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW95
+U 1 1 5DB6D6DC
+P 17050 -4750
+F 0 "SW95" H 17050 -4495 50  0000 C CNN
+F 1 "SW_PUSH" H 17050 -4586 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 17050 -4750 60  0001 C CNN
+F 3 "" H 17050 -4750 60  0000 C CNN
+	1    17050 -4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D94
+U 1 1 5DB6D6E2
+P 17350 -5100
+F 0 "D94" V 17304 -5021 50  0000 L CNN
+F 1 "D" V 17395 -5021 50  0000 L CNN
+F 2 "TestKey:Diode" H 17350 -5100 50  0001 C CNN
+F 3 "~" H 17350 -5100 50  0001 C CNN
+	1    17350 -5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW94
+U 1 1 5DB6D6E8
+P 17050 -5250
+F 0 "SW94" H 17050 -4995 50  0000 C CNN
+F 1 "SW_PUSH" H 17050 -5086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 17050 -5250 60  0001 C CNN
+F 3 "" H 17050 -5250 60  0000 C CNN
+	1    17050 -5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D103
+U 1 1 5DB71430
+P 19350 -5100
+F 0 "D103" V 19304 -5021 50  0000 L CNN
+F 1 "D" V 19395 -5021 50  0000 L CNN
+F 2 "TestKey:Diode" H 19350 -5100 50  0001 C CNN
+F 3 "~" H 19350 -5100 50  0001 C CNN
+	1    19350 -5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW103
+U 1 1 5DB71436
+P 19050 -5250
+F 0 "SW103" H 19050 -4995 50  0000 C CNN
+F 1 "SW_PUSH" H 19050 -5086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 19050 -5250 60  0001 C CNN
+F 3 "" H 19050 -5250 60  0000 C CNN
+	1    19050 -5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D102
+U 1 1 5DB7143C
+P 18350 -300
+F 0 "D102" V 18304 -221 50  0000 L CNN
+F 1 "D" V 18395 -221 50  0000 L CNN
+F 2 "TestKey:Diode" H 18350 -300 50  0001 C CNN
+F 3 "~" H 18350 -300 50  0001 C CNN
+	1    18350 -300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW102
+U 1 1 5DB71442
+P 18050 -450
+F 0 "SW102" H 18050 -195 50  0000 C CNN
+F 1 "SW_PUSH" H 18050 -286 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 18050 -450 60  0001 C CNN
+F 3 "" H 18050 -450 60  0000 C CNN
+	1    18050 -450
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW100
+U 1 1 5DB7145A
+P 18050 -3700
+F 0 "SW100" H 18050 -3445 50  0000 C CNN
+F 1 "SW_PUSH" H 18050 -3536 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 18050 -3700 60  0001 C CNN
+F 3 "" H 18050 -3700 60  0000 C CNN
+	1    18050 -3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D99
+U 1 1 5DB71460
+P 18350 -4600
+F 0 "D99" V 18304 -4521 50  0000 L CNN
+F 1 "D" V 18395 -4521 50  0000 L CNN
+F 2 "TestKey:Diode" H 18350 -4600 50  0001 C CNN
+F 3 "~" H 18350 -4600 50  0001 C CNN
+	1    18350 -4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW99
+U 1 1 5DB71466
+P 18050 -4750
+F 0 "SW99" H 18050 -4495 50  0000 C CNN
+F 1 "SW_PUSH" H 18050 -4586 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 18050 -4750 60  0001 C CNN
+F 3 "" H 18050 -4750 60  0000 C CNN
+	1    18050 -4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW104
+U 1 1 5DB7146C
+P 19050 -4750
+F 0 "SW104" H 19050 -4495 50  0000 C CNN
+F 1 "SW_PUSH" H 19050 -4586 50  0000 C CNN
+F 2 "TestKey:Mx200V" H 19050 -4750 60  0001 C CNN
+F 3 "" H 19050 -4750 60  0000 C CNN
+	1    19050 -4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D104
+U 1 1 5DB71472
+P 19350 -4250
+F 0 "D104" V 19304 -4171 50  0000 L CNN
+F 1 "D" V 19395 -4171 50  0000 L CNN
+F 2 "TestKey:Diode" H 19350 -4250 50  0001 C CNN
+F 3 "~" H 19350 -4250 50  0001 C CNN
+	1    19350 -4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW62
+U 1 1 5D9FA23E
+P 11050 -5250
+F 0 "SW62" H 11050 -4995 50  0000 C CNN
+F 1 "SW_PUSH" H 11050 -5086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 11050 -5250 60  0001 C CNN
+F 3 "" H 11050 -5250 60  0000 C CNN
+	1    11050 -5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D62
+U 1 1 5D9FA238
+P 11350 -5100
+F 0 "D62" V 11304 -5021 50  0000 L CNN
+F 1 "D" V 11395 -5021 50  0000 L CNN
+F 2 "TestKey:Diode" H 11350 -5100 50  0001 C CNN
+F 3 "~" H 11350 -5100 50  0001 C CNN
+	1    11350 -5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW63
+U 1 1 5D9FA232
+P 11050 -4750
+F 0 "SW63" H 11050 -4495 50  0000 C CNN
+F 1 "SW_PUSH" H 11050 -4586 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 11050 -4750 60  0001 C CNN
+F 3 "" H 11050 -4750 60  0000 C CNN
+	1    11050 -4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D63
+U 1 1 5D9FA22C
+P 11350 -4600
+F 0 "D63" V 11304 -4521 50  0000 L CNN
+F 1 "D" V 11395 -4521 50  0000 L CNN
+F 2 "TestKey:Diode" H 11350 -4600 50  0001 C CNN
+F 3 "~" H 11350 -4600 50  0001 C CNN
+	1    11350 -4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW64
+U 1 1 5D9FA226
+P 11050 -4250
+F 0 "SW64" H 11050 -3995 50  0000 C CNN
+F 1 "SW_PUSH" H 11050 -4086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 11050 -4250 60  0001 C CNN
+F 3 "" H 11050 -4250 60  0000 C CNN
+	1    11050 -4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D64
+U 1 1 5D9FA220
+P 11350 -3550
+F 0 "D64" V 11304 -3471 50  0000 L CNN
+F 1 "D" V 11395 -3471 50  0000 L CNN
+F 2 "TestKey:Diode" H 11350 -3550 50  0001 C CNN
+F 3 "~" H 11350 -3550 50  0001 C CNN
+	1    11350 -3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW65
+U 1 1 5D9FA21A
+P 11050 -2900
+F 0 "SW65" H 11050 -2645 50  0000 C CNN
+F 1 "SW_PUSH" H 11050 -2736 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 11050 -2900 60  0001 C CNN
+F 3 "" H 11050 -2900 60  0000 C CNN
+	1    11050 -2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D65
+U 1 1 5D9FA214
+P 11350 -2200
+F 0 "D65" V 11304 -2121 50  0000 L CNN
+F 1 "D" V 11395 -2121 50  0000 L CNN
+F 2 "TestKey:Diode" H 11350 -2200 50  0001 C CNN
+F 3 "~" H 11350 -2200 50  0001 C CNN
+	1    11350 -2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW56
+U 1 1 5D9F3AEF
+P 10050 -5250
+F 0 "SW56" H 10050 -4995 50  0000 C CNN
+F 1 "SW_PUSH" H 10050 -5086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 10050 -5250 60  0001 C CNN
+F 3 "" H 10050 -5250 60  0000 C CNN
+	1    10050 -5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D56
+U 1 1 5D9F3AE9
+P 10350 -5100
+F 0 "D56" V 10304 -5021 50  0000 L CNN
+F 1 "D" V 10395 -5021 50  0000 L CNN
+F 2 "TestKey:Diode" H 10350 -5100 50  0001 C CNN
+F 3 "~" H 10350 -5100 50  0001 C CNN
+	1    10350 -5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW57
+U 1 1 5D9F3AE3
+P 10050 -4750
+F 0 "SW57" H 10050 -4495 50  0000 C CNN
+F 1 "SW_PUSH" H 10050 -4586 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 10050 -4750 60  0001 C CNN
+F 3 "" H 10050 -4750 60  0000 C CNN
+	1    10050 -4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D57
+U 1 1 5D9F3ADD
+P 10350 -4600
+F 0 "D57" V 10304 -4521 50  0000 L CNN
+F 1 "D" V 10395 -4521 50  0000 L CNN
+F 2 "TestKey:Diode" H 10350 -4600 50  0001 C CNN
+F 3 "~" H 10350 -4600 50  0001 C CNN
+	1    10350 -4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW58
+U 1 1 5D9F3AD7
+P 10050 -4250
+F 0 "SW58" H 10050 -3995 50  0000 C CNN
+F 1 "SW_PUSH" H 10050 -4086 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 10050 -4250 60  0001 C CNN
+F 3 "" H 10050 -4250 60  0000 C CNN
+	1    10050 -4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D58
+U 1 1 5D9F3AD1
+P 10350 -3550
+F 0 "D58" V 10304 -3471 50  0000 L CNN
+F 1 "D" V 10395 -3471 50  0000 L CNN
+F 2 "TestKey:Diode" H 10350 -3550 50  0001 C CNN
+F 3 "~" H 10350 -3550 50  0001 C CNN
+	1    10350 -3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:SW_PUSH SW59
+U 1 1 5D9F3ACB
+P 10050 -2900
+F 0 "SW59" H 10050 -2645 50  0000 C CNN
+F 1 "SW_PUSH" H 10050 -2736 50  0000 C CNN
+F 2 "TestKey:Mx100H" H 10050 -2900 60  0001 C CNN
+F 3 "" H 10050 -2900 60  0000 C CNN
+	1    10050 -2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D59
+U 1 1 5D9F3AC5
+P 10350 -2200
+F 0 "D59" V 10304 -2121 50  0000 L CNN
+F 1 "D" V 10395 -2121 50  0000 L CNN
+F 2 "TestKey:Diode" H 10350 -2200 50  0001 C CNN
+F 3 "~" H 10350 -2200 50  0001 C CNN
+	1    10350 -2200
+	0    -1   -1   0   
+$EndComp
+Text Label 18750 -5750 1    50   ~ 0
+col9
+Text Label 17750 -5750 1    50   ~ 0
+col8
+Text Label 16750 -5750 1    50   ~ 0
+col7
+Text Label 15750 -5750 1    50   ~ 0
+col6
+Text Label 10750 -5750 1    50   ~ 0
+col1
+Text Label 14750 -5750 1    50   ~ 0
+col5
+Text Label 13750 -5750 1    50   ~ 0
+col4
+Text Label 12750 -5750 1    50   ~ 0
+col3
+Text Label 11750 -5750 1    50   ~ 0
+col2
+Text Label 9750 -5750 1    50   ~ 0
+col0
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 60A893E1
+P 750 2150
+F 0 "H2" H 850 2196 50  0000 L CNN
+F 1 "MountingHole" H 850 2105 50  0000 L CNN
+F 2 "TestKey:SPACER_HOLE" H 750 2150 50  0001 C CNN
+F 3 "~" H 750 2150 50  0001 C CNN
+	1    750  2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 60A8B0A1
+P 800 2350
+F 0 "H4" H 900 2396 50  0000 L CNN
+F 1 "MountingHole" H 900 2305 50  0000 L CNN
+F 2 "TestKey:SPACER_HOLE" H 800 2350 50  0001 C CNN
+F 3 "~" H 800 2350 50  0001 C CNN
+	1    800  2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 60AA2690
+P 800 2550
+F 0 "H7" H 900 2596 50  0000 L CNN
+F 1 "MountingHole" H 900 2505 50  0000 L CNN
+F 2 "TestKey:SPACER_HOLE" H 800 2550 50  0001 C CNN
+F 3 "~" H 800 2550 50  0001 C CNN
+	1    800  2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H10
+U 1 1 60AB9CC9
+P 800 2850
+F 0 "H10" H 900 2896 50  0000 L CNN
+F 1 "MountingHole" H 900 2805 50  0000 L CNN
+F 2 "TestKey:SPACER_HOLE" H 800 2850 50  0001 C CNN
+F 3 "~" H 800 2850 50  0001 C CNN
+	1    800  2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H12
+U 1 1 60AD131A
+P 750 3100
+F 0 "H12" H 850 3146 50  0000 L CNN
+F 1 "MountingHole" H 850 3055 50  0000 L CNN
+F 2 "TestKey:SPACER_HOLE" H 750 3100 50  0001 C CNN
+F 3 "~" H 750 3100 50  0001 C CNN
+	1    750  3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 60B02778
+P 1650 2150
+F 0 "H3" H 1750 2196 50  0000 L CNN
+F 1 "MountingHole" H 1750 2105 50  0000 L CNN
+F 2 "TestKey:SPACER_HOLE" H 1650 2150 50  0001 C CNN
+F 3 "~" H 1650 2150 50  0001 C CNN
+	1    1650 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 60B0277E
+P 1700 2350
+F 0 "H5" H 1800 2396 50  0000 L CNN
+F 1 "MountingHole" H 1800 2305 50  0000 L CNN
+F 2 "TestKey:SPACER_HOLE" H 1700 2350 50  0001 C CNN
+F 3 "~" H 1700 2350 50  0001 C CNN
+	1    1700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H8
+U 1 1 60B02784
+P 1700 2550
+F 0 "H8" H 1800 2596 50  0000 L CNN
+F 1 "MountingHole" H 1800 2505 50  0000 L CNN
+F 2 "TestKey:SPACER_HOLE" H 1700 2550 50  0001 C CNN
+F 3 "~" H 1700 2550 50  0001 C CNN
+	1    1700 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H11
+U 1 1 60B0278A
+P 1700 2850
+F 0 "H11" H 1800 2896 50  0000 L CNN
+F 1 "MountingHole" H 1800 2805 50  0000 L CNN
+F 2 "TestKey:SPACER_HOLE" H 1700 2850 50  0001 C CNN
+F 3 "~" H 1700 2850 50  0001 C CNN
+	1    1700 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H13
+U 1 1 60B02790
+P 1650 3100
+F 0 "H13" H 1750 3146 50  0000 L CNN
+F 1 "MountingHole" H 1750 3055 50  0000 L CNN
+F 2 "TestKey:SPACER_HOLE" H 1650 3100 50  0001 C CNN
+F 3 "~" H 1650 3100 50  0001 C CNN
+	1    1650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 60B1BD72
+P 2800 2100
+F 0 "H1" H 2900 2146 50  0000 L CNN
+F 1 "MountingHole" H 2900 2055 50  0000 L CNN
+F 2 "TestKey:SPACER_HOLE" H 2800 2100 50  0001 C CNN
+F 3 "~" H 2800 2100 50  0001 C CNN
+	1    2800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 60B1BD78
+P 2800 2400
+F 0 "H6" H 2900 2446 50  0000 L CNN
+F 1 "MountingHole" H 2900 2355 50  0000 L CNN
+F 2 "TestKey:SPACER_HOLE" H 2800 2400 50  0001 C CNN
+F 3 "~" H 2800 2400 50  0001 C CNN
+	1    2800 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H9
+U 1 1 60B1BD7E
+P 2750 2650
+F 0 "H9" H 2850 2696 50  0000 L CNN
+F 1 "MountingHole" H 2850 2605 50  0000 L CNN
+F 2 "TestKey:SPACER_HOLE" H 2750 2650 50  0001 C CNN
+F 3 "~" H 2750 2650 50  0001 C CNN
+	1    2750 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H14
+U 1 1 60B5C7A0
+P 2750 2900
+F 0 "H14" H 2850 2946 50  0000 L CNN
+F 1 "MountingHole" H 2850 2855 50  0000 L CNN
+F 2 "TestKey:SPACER_HOLE" H 2750 2900 50  0001 C CNN
+F 3 "~" H 2750 2900 50  0001 C CNN
+	1    2750 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H15
+U 1 1 60B5C7A6
+P 2750 3200
+F 0 "H15" H 2850 3246 50  0000 L CNN
+F 1 "MountingHole" H 2850 3155 50  0000 L CNN
+F 2 "TestKey:SPACER_HOLE" H 2750 3200 50  0001 C CNN
+F 3 "~" H 2750 3200 50  0001 C CNN
+	1    2750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H16
+U 1 1 60B5C7AC
+P 2700 3450
+F 0 "H16" H 2800 3496 50  0000 L CNN
+F 1 "MountingHole" H 2800 3405 50  0000 L CNN
+F 2 "TestKey:SPACER_HOLE" H 2700 3450 50  0001 C CNN
+F 3 "~" H 2700 3450 50  0001 C CNN
+	1    2700 3450
+	1    0    0    -1  
+$EndComp
+Text GLabel -4500 -4150 2    50   Input ~ 0
+BAT
+$Comp
+L power:GND #PWR0101
+U 1 1 5F1AE632
+P -6300 -4150
+F 0 "#PWR0101" H -6300 -4400 50  0001 C CNN
+F 1 "GND" H -6295 -4323 50  0000 C CNN
+F 2 "" H -6300 -4150 50  0001 C CNN
+F 3 "" H -6300 -4150 50  0001 C CNN
+	1    -6300 -4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-5900 -4150 -6300 -4150
+Text GLabel -3100 -2150 0    50   Input ~ 0
+BAT
+$Comp
+L power:GND #PWR0102
+U 1 1 5F1F8BFE
+P -3350 -2250
+F 0 "#PWR0102" H -3350 -2500 50  0001 C CNN
+F 1 "GND" H -3345 -2423 50  0000 C CNN
+F 2 "" H -3350 -2250 50  0001 C CNN
+F 3 "" H -3350 -2250 50  0001 C CNN
+	1    -3350 -2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L TestKey:BLE_BAT BAT1
+U 1 1 5F2508A3
+P -3100 -2350
+F 0 "BAT1" H -2781 -2439 50  0000 L CNN
+F 1 "BLE_BAT" H -2781 -2530 50  0000 L CNN
+F 2 "TestKey:BLEMicroPro_Bat" H -3100 -2350 50  0001 C CNN
+F 3 "" H -3100 -2350 50  0001 C CNN
+	1    -3100 -2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-3100 -2250 -3350 -2250
+Wire Wire Line
+	13350 -150 12350 -150
+Connection ~ 13350 -150
+Connection ~ 10350 -150
+Connection ~ 12350 -150
+Wire Wire Line
+	12350 -150 10350 -150
+Wire Wire Line
+	17350 -2900 17350 -2350
+Connection ~ 17350 -2050
+Wire Wire Line
+	16350 -2050 17350 -2050
+Wire Wire Line
+	17350 -2050 18350 -2050
+$Comp
+L Device:D D97
+U 1 1 5DB6D6BE
+P 17350 -2200
+F 0 "D97" V 17304 -2121 50  0000 L CNN
+F 1 "D" V 17395 -2121 50  0000 L CNN
+F 2 "TestKey:Diode" H 17350 -2200 50  0001 C CNN
+F 3 "~" H 17350 -2200 50  0001 C CNN
+	1    17350 -2200
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
