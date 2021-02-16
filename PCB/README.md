@@ -17,3 +17,7 @@
 ## オプション
 - [フルカラーシリアルLED (WS2812B) 10個入り](https://yushakobo.jp/shop/a0800ws-01-10/) x12(全部で111個)
 - [電子ワイヤー](https://akizukidenshi.com/catalog/g/gP-11640/) x1(ボトムとPCBをつなげるために使います)
+
+
+## License
+[MIT](https://github.com/kakunpc/thedogkeyboard/blob/master/LICENSE)

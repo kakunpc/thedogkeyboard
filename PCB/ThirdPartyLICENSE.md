@@ -24,7 +24,7 @@ SOFTWARE.
 
 ------------------------------------------------------------------------------------------
 
-# helix
+# Helix
 
 MIT License
 
@@ -49,6 +49,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ------------------------------------------------------------------------------------------
+
+# ProMicro
 
 The MIT License (MIT)
 
