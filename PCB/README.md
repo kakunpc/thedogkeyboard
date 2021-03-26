@@ -9,7 +9,7 @@
 - [ウレタンクッション – 丸型10mm 6個入り](https://yushakobo.jp/shop/a0800ur-01-6/) x1 (全部で6個)
 - [タクタイルスイッチ – 3x6x4.3mm ブラケット付き](https://yushakobo.jp/shop/a1600ed-01-1/) x1
 - [Pro Micro （コンスルー付き）](https://yushakobo.jp/shop/promicro-spring-pinheader/) x1
-
+- [スタビライザー](https://shop.yushakobo.jp/collections/stabilizer/products/a0500st) 2Ux4 6.25Ux1 (基本的なレイアウトの場合)
 - [MXキースイッチ](https://yushakobo.jp/product-category/switches/) x104～111個
 - [MXキーキャップ](https://yushakobo.jp/product-category/keycaps/) x104～111個
 - [USBケーブル Micro B 1m](https://yushakobo.jp/shop/usb_cable_micro_b/) x1
